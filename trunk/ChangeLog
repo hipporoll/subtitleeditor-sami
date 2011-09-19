@@ -1,0 +1,5001 @@
+2011-09-03  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/subrip/subrip.cc:
+	Fix bug #18381 : Fails to open srt file with co-ordinates in the first subtitle.
+
+2011-09-03  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop.in:
+	Fix bug #18449 : Encoding key is deprecated in share/subtitleeditor.desktop.in
+
+2011-09-03  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop.in:
+	Fix bug #18448 : Subtitleeditor should not handle MIME-Type "text/plain".
+
+2011-07-02  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/sami/sami.cc:
+	Fix: No need ptr for Subtitle.
+
+2011-06-18  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2011-06-18  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.39.0 release.
+
+2011-06-18  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/subtitleformats/Makefile.am:
+	* plugins/subtitleformats/sami/Makefile.am:
+	* plugins/subtitleformats/sami/sami.cc:
+	* plugins/subtitleformats/sami/sami.se-plugin.in:
+	Introduce new subtitle format SAMI. Patch by Dongsu Park <advance38 at gmail dot com>
+
+2011-04-10  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	* plugins/actions/documentsnavigation/Makefile.am:
+	* plugins/actions/documentsnavigation/documentsnavigation.cc:
+	* plugins/actions/documentsnavigation/documentsnavigation.se-plugin.in:
+	* src/document.cc:
+	* src/documentsystem.cc:
+	* src/documentsystem.h:
+	Fix bug #18010 : Feature request: keyboard shortcut for switching between
+	opened files. New plugin documentsnavigation.
+
+2011-04-02  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/advancedsubstationalpha/Makefile.am:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/advancedsubstationalpha/dialog-advancedsubstationalpha-preferences.ui:
+	* plugins/subtitleformats/substationalpha/Makefile.am:
+	* plugins/subtitleformats/substationalpha/dialog-substationalpha-preferences.ui:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	Fix bug #17821 : Using capital N for linebreaks in ASS format.
+
+2011-03-05  kitone  <kitone@gna.org>
+
+	* src/gui/treeviewextensionmanager.cc:
+	Display an icon when an extension is configurable.
+
+2011-03-05  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	New plugin insertsubtitlefromkeyframe.
+	
+	* plugins/actions/insertsubtitlefromkeyframe/Makefile.am:
+	* plugins/actions/insertsubtitlefromkeyframe/insertsubtitlefromkeyframe.cc:
+	* plugins/actions/insertsubtitlefromkeyframe/insertsubtitlefromkeyframe.se-plugin.in:
+	Fix bug #17828 : Feature request: Create subtitles automatically according to keyframes.
+
+2011-02-13  kitone  <kitone@gna.org>
+
+	* src/subtitle.cc:
+	Clean code.
+
+	* src/subtitleview.cc:
+	Fix bug #17686 : CPS error detection, display CPS with colors.
+
+2011-02-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/timingfromplayer/timingfromplayer.cc:
+	Fix bug #17686 : set_subtitle_end_and_start (original patch by Tomas Partl <eltomito>)
+	Fix bug #17648 : Add new command to plugin TimingFromPlayer (original patch by Victor Cighir <victorcighir>)
+	Improvement of the plugin timingfromplayer, new actions and code refactoring.
+
+2011-01-10  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2011-01-10  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.38.0 release.
+
+2011-01-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/sortsubtitles/sortsubtitles.cc:
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	Rewrite sort subtitles. Speed improvements.
+
+2010-12-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.cc:
+	Clean code.
+
+2010-12-06  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	Fix bug #17231 : Opening SEP project wont open a Keyframes file automatically.
+
+2010-11-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/adjusttime/adjusttime.cc:
+	Fix English errors patch by Pavel Dvořák.
+
+2010-11-05  kitone  <kitone@gna.org>
+
+	* src/subtitlemodel.cc:
+	* src/subtitlemodel.h:
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	Fix bug #17000 : Subtitles in MicroDVD format don't display correct.
+	SubtitleModel::find doesn't work if the document is frame based.
+	Remove unused function find_in_or_after. 
+	Clean code.
+
+2010-11-01  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/microdvd/microdvd.cc:
+	Fix bug #16898 : Feature request - movie fps detecting.
+
+2010-11-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/scalesubtitles/scalesubtitles.cc:
+	Fix bug #16917 : scale option doesn't work correctly with frame-based subtitles.
+
+2010-09-05  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	Define the default value of the framerate from the player.
+
+2010-09-02  kitone  <kitone@gna.org>
+
+	* src/player.h:
+	* src/vp/gstplayer.cc:
+	* src/vp/gstplayer.h:
+	Add the capability to return the framerate of the video.
+
+2010-09-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/errorchecking.h:
+	* src/style.cc:
+	* src/style.h:
+	* src/subtitletime.cc:
+	* src/subtitletime.h:
+	* src/we/waveformrenderergl.cc:
+	Code cleanup.
+
+2010-08-24  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/errorcheckingplugin.cc:
+	* plugins/actions/textcorrection/pattern.cc:
+	* plugins/actions/textcorrection/pattern.h:
+	* src/timeutility.cc:
+	Code cleanup.
+
+2010-08-24  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	Code cleanup.
+
+2010-08-24  kitone  <kitone@gna.org>
+
+	* src/document.cc:
+	Catch glib exception and display error dialog (open, save).
+
+2010-08-24  kitone  <kitone@gna.org>
+
+	* src/subtitle.cc:
+	Fix bug #16524 : Broken character count (column translation).
+
+2010-07-30  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	Fix bug #16314 : Unable to set subtitle times after importing plain text.
+
+2010-07-11  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2010-07-11  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.37.1 release.
+
+2010-07-08  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	* src/we/waveformrenderercairo.cc:
+	Fix bug #16016 : segfault (divide by zero).
+
+2010-07-03  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.37.0 release.
+
+2010-07-03  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Fix sort command.
+
+2010-06-23  kitone  <kitone@gna.org>
+
+	* src/debug.cc:
+	* src/debug.h:
+	* src/main.cc:
+	* src/options.cc:
+	* src/options.h:
+	Update copyright to 2010.
+
+2010-06-22  kitone  <kitone@gna.org>
+
+	* src/debug.cc:
+	* src/debug.h:
+	* src/main.cc:
+	* src/options.cc:
+	* src/options.h:
+	Code clean up. (thanks Erik)
+
+2010-06-22  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderercairo.cc:
+	Fix bug #16016 : waveform segmentation fault.
+
+2010-06-20  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.cc:
+	* plugins/actions/joindocument/joindocument.cc:
+	* src/document.cc:
+	* src/document.h:
+	Code clean up.
+
+2010-06-15  kitone  <kitone@gna.org>
+
+	* plugins/actions/findandreplace/findandreplace.cc:
+	Fix bug #16058 : crash at "find and replace" with regexp.
+
+2010-06-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/scalesubtitles/dialog-scale-subtitles.ui:
+	* plugins/actions/scalesubtitles/scalesubtitles.cc:
+	Fix bug #16121 : Feature request: add option to scale all subtitles. (Orig.
+	patch by Ludek <anomen>)
+
+2010-05-26  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	* src/gui/dialogutility.cc:
+	* src/gui/dialogutility.h:
+	Split the framerate query with import and export labels.
+
+2010-05-25  kitone  <kitone@gna.org>
+
+	* src/gui/comboboxframerate.cc:
+	* src/gui/comboboxframerate.h:
+	* src/gui/dialogutility.cc:
+	* src/gui/dialogutility.h:
+	Add set_value to ComboBoxFramerate and set_default_framerate to
+	FramerateChooserDialog.
+
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	Sets the framerate of the document after the user have chosen and sets 
+	the default value from the document during saving.
+
+2010-05-25  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	Small fix in the regex.
+
+2010-05-25  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	Ask framerate value with the FramerateChooserDialog. Small improvements.
+
+2010-05-25  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/bitc/Makefile.am:
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/bitc/dialog-bitc.ui:
+	Remove the file dialog-bitc.ui, use instead FramerateChooserDialog.
+
+2010-05-25  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gui/comboboxframerate.cc:
+	* src/gui/comboboxframerate.h:
+	* src/gui/dialogutility.cc:
+	* src/gui/dialogutility.h:
+	Introduce ComboBoxFramerate and FramerateChooserDialog.
+
+2010-05-22  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/subtitleformats/Makefile.am:
+	* plugins/subtitleformats/sprucestl/Makefile.am:
+	* plugins/subtitleformats/sprucestl/sprucestl.cc:
+	* plugins/subtitleformats/sprucestl/sprucestl.se-plugin.in:
+	Introduce new subtitle format Spruce STL. Fix sr #2543 : Support for .stl file format.
+
+2010-05-04  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Display the saving dialog after generating waveform (with open waveform).
+
+2010-04-29  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Display the saving dialog after generating waveform or keyframes.
+
+2010-04-29  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Fix bug #15942 : Default location in file select dialog (waveform and
+	keyframes).
+
+2010-04-29  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesgenerator.cc:
+	Set the video uri.
+
+2010-04-29  kitone  <kitone@gna.org>
+
+	* src/keyframes.cc:
+	* src/keyframes.h:
+	Add video uri and update kf format to the v2.
+
+2010-04-29  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2010-04-06  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* README:
+	* configure.in:
+	Preparing 0.36.2 release.
+
+2010-04-06  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/subtitleformats/Makefile.am:
+	* plugins/subtitleformats/sbv/Makefile.am:
+	* plugins/subtitleformats/sbv/sbv.cc:
+	* plugins/subtitleformats/sbv/sbv.se-plugin.in:
+	Introduce new subtitle format: SBV.
+
+2010-04-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/dialog-change-framerate.ui:
+	Fix HIG.
+
+2010-03-30  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/typewriter/typewriter.cc:
+	Fix typo.
+
+2010-03-26  kitone  <kitone@gna.org>
+
+	* README:
+	Update.
+
+2010-03-22  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2010-03-22  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.36.1 release.
+
+2010-03-21  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Update ui only if needed.
+
+2010-03-21  kitone  <kitone@gna.org>
+
+	* src/player.cc:
+	* src/player.h:
+	* src/vp/gstplayer.cc:
+	* src/vp/gstplayer.h:
+	* src/vp/videoplayer.cc:
+	* src/vp/videoplayer.h:
+	Improvement of the player to work with messages.
+
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/timingfromplayer/timingfromplayer.cc:
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	* src/we/waveformeditor.cc:
+	* src/we/waveformeditor.h:
+	Updated to work with the messages of the player.
+
+2010-03-12  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderercairo.cc:
+	Fix bug #15464 : segfault on waveform generation. 
+	Avoid segfault in waveformrenderercairo.
+
+2010-03-12  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	Improve dbg msg.
+
+2010-03-03  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/mediadecoder.h:
+	* plugins/actions/wavefrommanagement/mediadecoder.h:
+	* src/vp/gstplayer.cc:
+	* src/vp/gstplayer.h:
+	Move gstreamer missing plugin message in the Gst::MESSAGE_ELEMENT case.
+
+2010-03-03  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	* src/we/waveformrenderercairo.cc:
+	Improve dbg msg.
+
+2010-02-16  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	Fix bug #15374 : gtkmm-2.14 has not Gtk::Action set_stock_id (2).
+
+2010-02-16  kitone  <kitone@gna.org>
+
+	* src/gui/menubar.cc:
+	* src/utility.h:
+	Fix bug #15374 : gtkmm-2.14 has not Gtk::Action set_stock_id.
+
+2010-02-15  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderergl.cc:
+	Fix waveform renderer gl build error.
+
+2010-02-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/plaintext/plaintext.cc:
+	* share/menubar.xml:
+	* src/gui/menubar.cc:
+	Reorganize the menu file with a sub-menu import and export. 
+
+2010-02-10  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2010-02-02  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.36.0 release.
+
+2010-02-01  kitone  <kitone@gna.org>
+
+	Fix bug #14651 : Subtitle sorting option.
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	* plugins/actions/sortsubtitles/Makefile.am:
+	* plugins/actions/sortsubtitles/sortsubtitles.cc:
+	* plugins/actions/sortsubtitles/sortsubtitles.se-plugin.in:
+	Introduce new plugin sortsubtitles.
+	
+	* share/menubar.xml:
+	Add placeholder in the menu Timing.
+
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	Add function to remove only one subtitle.
+
+2010-01-31  kitone  <kitone@gna.org>
+
+	* share/ui/dialog-export-text.ui:
+	* share/ui/dialog-import-text.ui:
+	* share/ui/dialog-open-document.ui:
+	* share/ui/dialog-save-document.ui:
+	Small fixes in the border-with value.
+
+2010-01-31  kitone  <kitone@gna.org>
+
+	* src/gui/dialogfilechooser.cc:
+	* src/gui/dialogfilechooser.h:
+	Update the extension of the filename when the format change.
+
+2010-01-31  kitone  <kitone@gna.org>
+
+	* src/subtitleformatsystem.cc:
+	* src/subtitleformatsystem.h:
+	New function get_info from the format.
+
+2010-01-30  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	Add icons to the skip items.
+
+2010-01-28  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	* plugins/actions/typewriter/Makefile.am:
+	* plugins/actions/typewriter/typewriter.cc:
+	* plugins/actions/typewriter/typewriter.se-plugin.in:
+	Introduce new plugin typewriter.
+
+2010-01-28  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Add -Wextra -Wconversion to the CXXFLAGS.
+
+2010-01-26  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/textcorrection.cc:
+	Fix crash caused by the text correction tool. 
+	Improve dbg msg.
+
+2010-01-26  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Remove unused value LIBUIMM_LIBS & LIBUIMM_FLAGS.
+
+2010-01-26  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Clear Gdk::Window when the widget is resize.
+
+2010-01-20  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	Save the scale value of the waveform editor.
+
+2010-01-20  kitone  <kitone@gna.org>
+
+	* share/ui/subtitleeditor.ui:
+	Fix previous commit. (2010-01-14)
+
+2010-01-19  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	* share/menubar.xml:
+	* src/gui/menubar.cc:
+	Cleanup of the menu File. 'Open Project' and 'Save Project' have been added.
+
+2010-01-19  kitone  <kitone@gna.org>
+
+	* src/gui/dialogfilechooser.cc:
+	* src/gui/dialogfilechooser.h:
+	Add function set_current filter. Use dynamic Gtk::FileFilter.
+
+2010-01-19  kitone  <kitone@gna.org>
+
+	* src/gui/textviewcell.cc:
+	* src/gui/textviewcell.h:
+	Fixes the cell editing. 
+	Undesirable behavior with focus out/in.
+
+2010-01-19  kitone  <kitone@gna.org>
+
+	* src/gui/cellrenderercustom.h:
+	Improve debug info and fix fr comment.
+
+2010-01-16  kitone  <kitone@gna.org>
+
+	* src/keyframes.cc:
+	Fix possible leak caused by an uninitialized value.
+
+2010-01-15  kitone  <kitone@gna.org>
+
+	* share/ui/subtitleeditor.ui:
+	Fix previous error commit.
+
+2010-01-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/dialog-change-framerate.ui:
+	* plugins/actions/configurekeyboardshortcuts/dialog-configure-keyboard-shortcuts.ui:
+	* plugins/actions/errorchecking/dialog-error-checking-preferences.ui:
+	* plugins/actions/errorchecking/dialog-error-checking.ui:
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.ui:
+	* plugins/actions/findandreplace/dialog-find-and-replace.ui:
+	* plugins/actions/movesubtitles/dialog-move-subtitles.ui:
+	* plugins/actions/preferences/dialog-preferences.ui:
+	* plugins/actions/scalesubtitles/dialog-scale-subtitles.ui:
+	* plugins/actions/spellchecking/dialog-spell-checking.ui:
+	* plugins/actions/splitdocument/dialog-split-document.ui:
+	* plugins/actions/styleeditor/dialog-style-editor.ui:
+	* plugins/actions/textcorrection/assistant-text-correction.ui:
+	* plugins/actions/viewmanager/dialog-view-manager.ui:
+	* plugins/subtitleformats/bitc/dialog-bitc.ui:
+	* share/ui/dialog-character-codings.ui:
+	* share/ui/dialog-encodings-chooser.ui:
+	* share/ui/dialog-export-text.ui:
+	* share/ui/dialog-import-text.ui:
+	* share/ui/dialog-open-document.ui:
+	* share/ui/dialog-save-document.ui:
+	* share/ui/dialog-script-properties.ui:
+	* share/ui/subtitleeditor.ui:
+	Fixes and update all ui files with the good GtkOrientation value.
+
+2010-01-13  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderercairo.cc:
+	* src/we/waveformrenderergl.cc:
+	Fix bug #15032 : stuck in infinite loop for bad duration and other problems
+	with duration. (patch by Philip Jägenstedt <foolip>)
+
+2010-01-13  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/subtitletags.cc:
+	* src/subtitletags.h:
+	Remove unused files. (subtitletags.{h,cc})
+
+2010-01-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/combinesubtitles/combinesubtitles.cc:
+	Typo and comments translated from French to English (or something close).
+
+2010-01-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/combinesubtitles/combinesubtitles.cc:
+	Fix bug #15101 : Comments are not merged while merging subtitles.
+
+2010-01-11  kitone  <kitone@gna.org>
+
+	* src/vp/videoplayer.cc:
+	Fix bug #15085 : last subtitle remains visible after playing in video player.
+
+2010-01-11  kitone  <kitone@gna.org>
+
+	* src/main.cc: 
+	Fix bug #15095 : gracefully exit if e.g. subtitleeditor.ui is missing.
+	(patch by Philip Jägenstedt <foolip>)
+
+2010-01-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	Fix bug #15084 : default to the document format when saving
+	translations. (patch by Philip Jägenstedt <foolip>)
+
+2010-01-08  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	Fix bug #14915 : Add the possibility of choice of an audio track to the
+	videoplayermanagement.
+
+2010-01-08  kitone  <kitone@gna.org>
+
+	* src/player.cc:
+	* src/player.h:
+	* src/vp/gstplayer.cc:
+	* src/vp/gstplayer.h:
+	Fix bug #14915 : Add the possibility of choice of an audio track to the	player.
+
+2010-01-08  kitone  <kitone@gna.org>
+
+	* src/vp/videoplayer.cc:
+	FIXME comment for later.
+
+2010-01-06  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	Launch a gstreamer error if we cannot get the duration of the stream.
+
+2010-01-05  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderer.cc:
+	Return zero if the duration is not positive. (patch by Philip Jägenstedt <foolip>)
+
+2010-01-05  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	Update the duration value after the EOS signal and only set duration on
+	waveform if we actually know it. (patch by Philip Jägenstedt <foolip>)
+
+2010-01-05  kitone  <kitone@gna.org>
+
+	* src/gui/menubar.cc:
+	Change AccelKey of Extensions (conflict with Edit).
+
+2010-01-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Fix typo.
+
+2010-01-01  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2009-12-31  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.35.1 release.
+
+2009-12-31  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Update gstreamermm version to 0.10.4.
+
+	* src/vp/gstplayer.cc:
+	Remove gstreamermm check version.
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.35.0 release.
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* src/waveform.cc:
+	Remove g_warning to simple information msg. Avoid wrong bugs reports.
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* src/gstreamer_utility.h:
+	* src/vp/gstplayer.cc:
+	Add GSTREAMERMM_CHECK_VERSION. Support gstreamermm version >= 0.10.3 without patch.
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/mediadecoder.h:
+	* plugins/actions/wavefrommanagement/mediadecoder.h:
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	Improve debug messages in the mediadecoder and waveformgenerator.
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	Fix invalid subtitle end when the next subtitle isn't really the next.
+	Caused by the option 'respect the timing'.
+
+2009-12-23  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Improve debug msg in seek function.
+
+2009-12-23  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Improve debug msg in the on_bus_message_sync.
+
+2009-12-23  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Disable sync message when prepare-xwindow-id is done.
+
+2009-12-23  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Fix: return the audio sink.
+
+2009-12-21  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Add g_warning info.
+
+2009-12-21  kitone  <kitone@gna.org>
+
+	* src/vp/gstplayer.cc:
+	Fix segfault with the text overlay.
+
+2009-12-21  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop.in:
+	Fix bug #14974 : More appropriate Video category for subtitleeditor.desktop 
+	(patch by Dan S <danstowell>)
+
+2009-12-09  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Display the status of osx option.
+
+2009-12-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/preferences/dialog-preferences.ui:
+	Small fixes.
+
+2009-12-08  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/vp/gstreamerplayer.cc:
+	* src/vp/gstreamerplayer.h:
+	Remove files.
+
+2009-12-08  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/player.cc:
+	* src/player.h:
+	* src/vp/gstplayer.cc:
+	* src/vp/gstplayer.h:
+	* src/vp/videoplayer.cc:
+	Introduce gstplayer (gstreamermm) to replace the old player (gstreamer).
+	Fix bug #14386 : Subtitle Editor Fails to Load any Video File.
+
+2009-11-13  kitone  <kitone@gna.org>
+
+	* src/filewriter.cc:
+	Fix previous commit.
+
+2009-11-12  kitone  <kitone@gna.org>
+
+	* src/filereader.cc:
+	* src/filereader.h:
+	* src/filewriter.cc:
+	* src/filewriter.h:
+	Switch to gio(mm).
+
+2009-11-02  kitone  <kitone@gna.org>
+
+	* plugins/actions/splitsubtitle/splitsubtitle.cc:
+	Fix typo.
+
+2009-11-01  kitone  <kitone@gna.org>
+
+	* src/keyframes.cc:
+	Fix sr #2449 : keyframe does'nt save - 0.34.0.
+
+2009-11-01  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/subrip/subrip.cc:
+	Fix bug #14437 : DATA LOSS - [opening SubRip] first subtitle being omitted.
+
+2009-11-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	Fix build with old gcc. Fix sr #2128.
+
+2009-11-01  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/preferences/videoplayerpage.h:
+	Add OSX output. Fix sr #2128.
+
+2009-08-27  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderercairo.cc:
+	Display keyframes before subtitles.
+
+2009-08-24  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2009-08-21  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.34.0 release.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Fix ui type files.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Change glade to ui.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Remove libglademm dependence.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* Makefile.am:
+	* configure.in:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/changeframerate/changeframerate.cc:
+	* plugins/actions/changeframerate/dialog-change-framerate.glade:
+	* plugins/actions/changeframerate/dialog-change-framerate.ui:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.cc:
+	* plugins/actions/configurekeyboardshortcuts/dialog-configure-keyboard-shortcuts.glade:
+	* plugins/actions/configurekeyboardshortcuts/dialog-configure-keyboard-shortcuts.ui:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/errorchecking/dialog-error-checking-preferences.glade:
+	* plugins/actions/errorchecking/dialog-error-checking-preferences.ui:
+	* plugins/actions/errorchecking/dialog-error-checking.glade:
+	* plugins/actions/errorchecking/dialog-error-checking.ui:
+	* plugins/actions/errorchecking/errorcheckingplugin.cc:
+	* plugins/actions/errorchecking/errorcheckingpreferences.h:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.glade:
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.ui:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.cc:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/findandreplace/dialog-find-and-replace.glade:
+	* plugins/actions/findandreplace/dialog-find-and-replace.ui:
+	* plugins/actions/findandreplace/findandreplace.cc:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/movesubtitles/dialog-move-subtitles.glade:
+	* plugins/actions/movesubtitles/dialog-move-subtitles.ui:
+	* plugins/actions/movesubtitles/movesubtitles.cc:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/dialog-preferences.glade:
+	* plugins/actions/preferences/dialog-preferences.ui:
+	* plugins/actions/preferences/documentpage.h:
+	* plugins/actions/preferences/extensionpage.h:
+	* plugins/actions/preferences/interfacepage.h:
+	* plugins/actions/preferences/preferencepage.h:
+	* plugins/actions/preferences/preferencesplugin.cc:
+	* plugins/actions/preferences/timingpage.h:
+	* plugins/actions/preferences/videoplayerpage.h:
+	* plugins/actions/preferences/waveformpage.h:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/scalesubtitles/dialog-scale-subtitles.glade:
+	* plugins/actions/scalesubtitles/dialog-scale-subtitles.ui:
+	* plugins/actions/scalesubtitles/scalesubtitles.cc:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/spellchecking/dialog-spell-checking.glade:
+	* plugins/actions/spellchecking/dialog-spell-checking.ui:
+	* plugins/actions/spellchecking/spellchecking.cc:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitdocument/dialog-split-document.glade:
+	* plugins/actions/splitdocument/dialog-split-document.ui:
+	* plugins/actions/splitdocument/splitdocument.cc:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/styleeditor/dialog-style-editor.glade:
+	* plugins/actions/styleeditor/dialog-style-editor.ui:
+	* plugins/actions/styleeditor/styleeditor.cc:
+	* plugins/actions/styleeditor/styleeditor.h:
+	* plugins/actions/textcorrection/Makefile.am:
+	* plugins/actions/textcorrection/assistant-text-correction.glade:
+	* plugins/actions/textcorrection/assistant-text-correction.ui:
+	* plugins/actions/textcorrection/confirmationpage.h:
+	* plugins/actions/textcorrection/page.h:
+	* plugins/actions/textcorrection/patternspage.h:
+	* plugins/actions/textcorrection/taskspage.h:
+	* plugins/actions/textcorrection/textcorrection.cc:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/viewmanager/dialog-view-manager.glade:
+	* plugins/actions/viewmanager/dialog-view-manager.ui:
+	* plugins/actions/viewmanager/viewmanager.cc:
+	* plugins/subtitleformats/bitc/Makefile.am:
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/bitc/dialog-bitc.glade:
+	* plugins/subtitleformats/bitc/dialog-bitc.ui:
+	* share/Makefile.am:
+	* share/glade/Makefile.am:
+	* share/glade/dialog-character-codings.glade:
+	* share/glade/dialog-encodings-chooser.glade:
+	* share/glade/dialog-export-text.glade:
+	* share/glade/dialog-import-text.glade:
+	* share/glade/dialog-open-document.glade:
+	* share/glade/dialog-save-document.glade:
+	* share/glade/dialog-script-properties.glade:
+	* share/glade/subtitleeditor.glade:
+	* share/ui/Makefile.am:
+	* share/ui/dialog-character-codings.ui:
+	* share/ui/dialog-encodings-chooser.ui:
+	* share/ui/dialog-export-text.ui:
+	* share/ui/dialog-import-text.ui:
+	* share/ui/dialog-open-document.ui:
+	* share/ui/dialog-save-document.ui:
+	* share/ui/dialog-script-properties.ui:
+	* share/ui/subtitleeditor.ui:
+	* src/Makefile.am:
+	* src/gtkmm_utility.h:
+	* src/gui/application.cc:
+	* src/gui/application.h:
+	* src/gui/comboboxencoding.cc:
+	* src/gui/comboboxencoding.h:
+	* src/gui/comboboxnewline.cc:
+	* src/gui/comboboxnewline.h:
+	* src/gui/comboboxsubtitleformat.cc:
+	* src/gui/comboboxsubtitleformat.h:
+	* src/gui/comboboxvideo.cc:
+	* src/gui/comboboxvideo.h:
+	* src/gui/dialogcharactercodings.cc:
+	* src/gui/dialogcharactercodings.h:
+	* src/gui/dialogfilechooser.cc:
+	* src/gui/dialogfilechooser.h:
+	* src/gui/dialogutility.cc:
+	* src/gui/dialogutility.h:
+	* src/gui/spinbuttontime.cc:
+	* src/gui/spinbuttontime.h:
+	* src/gui/statusbar.cc:
+	* src/gui/statusbar.h:
+	* src/gui/treeviewextensionmanager.cc:
+	* src/gui/treeviewextensionmanager.h:
+	* src/main.cc:
+	* src/subtitleview.h:
+	* src/vp/videoplayer.cc:
+	* src/vp/videoplayer.h:
+	* src/we/waveformeditor.cc:
+	* src/we/waveformeditor.h:
+	Switch to Gtk::Builder. Rename share directory to ui. Rename glade files to ui.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	Fix bug #13061 : Wave form barely usable with 5.1 channel audio.
+
+	* src/waveform.h:
+	Waveform can have 3 channels.
+
+2009-08-17  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/keyframesgenerator.cc:
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	Small fixes.
+
+2009-08-10  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/we/waveformgenerator.cc:
+	* src/we/waveformgenerator.h:
+	Remove files src/we/waveformgenerator.*.
+
+	* src/waveformmanager.h:
+	* src/we/waveformeditor.cc:
+	* src/we/waveformeditor.h:
+	Remove waveformgenerator calls.
+
+2009-08-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	New files mediadecoder.h & waveformgenerator.cc.
+
+	* plugins/actions/wavefrommanagement/mediadecoder.h:
+	* plugins/actions/wavefrommanagement/waveformgenerator.cc:
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Move waveformgenerator in the plugin. (switch to gstreamermm).
+
+2009-08-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/keyframesmanagement/Makefile.am:
+	New files mediadecoder.h & keyframesgenerator.cc.
+
+	* plugins/actions/keyframesmanagement/keyframesgenerator.cc:
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/keyframesmanagement/mediadecoder.h:
+	Introduce keyframesgenerator.
+
+2009-08-06  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Init gstreamermm.
+
+2009-08-05  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Introduce new dependence to gstreamermm-0.10 >= 0.10.2.
+
+2009-08-04  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	Fix: keyframes changed don't redisplay waveform.
+
+2009-08-04  kitone  <kitone@gna.org>
+
+	* src/keyframes.h:
+	Move constructor and desctructor from protected to public.
+
+2009-08-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	Add new plugin keyframesmanagement.
+
+	* plugins/actions/keyframesmanagement/Makefile.am:
+	* plugins/actions/keyframesmanagement/keyframesmanagement.cc:
+	* plugins/actions/keyframesmanagement/keyframesmanagement.se-plugin.in:
+	Introduce new plugin keyframes management.
+
+	* share/menubar.xml:
+	* src/gui/menubar.cc:
+	Add menu keyframes.
+
+2009-08-03  kitone  <kitone@gna.org>
+
+	* src/gui/dialogfilechooser.cc:
+	* src/gui/dialogfilechooser.h:
+	Add DialogOpenKeyframe class.
+
+2009-08-03  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderercairo.cc:
+	Display the keyframes.
+
+	* src/we/waveformrenderergl.cc:
+	Display the keyframes. Need to be tested.
+
+2009-08-02  kitone  <kitone@gna.org>
+
+	* src/we/waveformeditor.cc:
+	* src/we/waveformeditor.h:
+	Update waveform when the keyframes changed.
+
+2009-08-02  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderer.cc:
+	* src/we/waveformrenderer.h:
+	Add keyframes support to the waveform renderer.
+
+2009-08-02  kitone  <kitone@gna.org>
+
+	* src/player.h:
+	* src/vp/gstreamerplayer.cc:
+	* src/vp/gstreamerplayer.h:
+	Add keyframes support to the player.
+
+2009-08-02  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Add new files keyframes.h & keyframes.cc.
+
+	* src/keyframes.cc:
+	* src/keyframes.h:
+	Introduce new class KeyFrames.
+
+2009-07-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/findandreplace/dialog-find-and-replace.glade:
+	* plugins/actions/findandreplace/findandreplace.cc:
+	Complete rewrite of the findandreplace plugin. Many improvements.
+
+2009-07-13  kitone  <kitone@gna.org>
+
+	* src/gui/application.cc:
+	Update the current page from the signal current-document-changed.
+
+2009-07-13  kitone  <kitone@gna.org>
+
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	Add select function from subtitle list.
+
+2009-07-06  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change dependence of enchant >= 1.4.0.
+
+2009-07-02  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change dependence of gtkmm >= 2.14.
+
+2009-06-24  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2009-06-23  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.33.0 release.
+
+2009-06-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/splitsubtitle/splitsubtitle.cc:
+	Improve split subtitle. Fix bug #13271 : Splitting italic subtitles.
+
+2009-06-20  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	New action 'Generate Dummy Waveform'. Fix bug #13696 : Waveform window for silent films.
+
+2009-06-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/splitsubtitle/splitsubtitle.cc:
+	Split a subtitle for each lines and sets the duration according to number of
+	characters in each part. Fix bug #13270.
+
+2009-06-14  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/subtitleformats/Makefile.am:
+	* plugins/subtitleformats/bitc/Makefile.am:
+	* plugins/subtitleformats/bitc/bitc.cc:
+	* plugins/subtitleformats/bitc/bitc.se-plugin.in:
+	* plugins/subtitleformats/bitc/dialog-bitc.glade:
+	Introduce new subtitle format: BITC. Fix bug #12858.
+
+2009-06-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/command/command.cc:
+	Fix small typo.
+
+2009-06-09  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	Introduce new plugin 'timingfromplayer'.
+
+	* share/menubar.xml:
+	* plugins/actions/timingfromplayer/Makefile.am:
+	* plugins/actions/timingfromplayer/timingfromplayer.cc:
+	* plugins/actions/timingfromplayer/timingfromplayer.se-plugin.in:
+	New plugin to define the subtitle time from the player position. This
+	plugin is extract from videoplayermanagement (see previous commit) with a 
+	new action 'Set Subtitle Start and End'. Fix bug #12570.
+
+2009-06-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	Remove actions 'Set Subtitle Start' and 'Set Subtitle End' of the videoplayermanagement plugin.
+
+2009-06-09  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	Make reading more robust to the files invalid. Fix bug #13656.
+
+2009-06-09  kitone  <kitone@gna.org>
+
+	* src/filereader.cc:
+	* src/filereader.h:
+	New function get_lines.
+
+2009-06-05  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2009-06-03  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.32.0 release.
+
+2009-06-02  kitone  <kitone@gna.org>
+
+	* share/Makefile.am:
+	Fix: Install icon to the pixmaps directory.
+
+2009-06-01  kitone  <kitone@gna.org>
+
+	* src/spellchecker.cc:
+	Use enchant_dict_add instead of enchant_dict_add_to_pwl (deprecated).
+
+2009-06-01  kitone  <kitone@gna.org>
+
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/spellchecking/spellchecking.h:
+	Remove file spellchecking.h.
+
+	* plugins/actions/spellchecking/dialog-spell-checking.glade:
+	* plugins/actions/spellchecking/spellchecking.cc:
+	Complete rewrite of the spellchecking plugin. 
+	Use the SpellChecker, can check the translation. 
+
+2009-06-01  kitone  <kitone@gna.org>
+
+	* src/document.cc:
+	* src/document.h:
+	* src/subtitleview.cc:
+	* src/subtitleview.h:
+	New function get_current_column_name.
+
+2009-05-30  kitone  <kitone@gna.org>
+
+	* src/spellchecker.cc:
+	Don't check number.
+
+2009-05-28  kitone  <kitone@gna.org>
+
+	* plugins/actions/scalesubtitles/scalesubtitles.cc:
+	More robust with the wrong values of the points, display error messages.
+
+2009-05-28  kitone  <kitone@gna.org>
+
+	* src/gui/automaticspellchecker.cc:
+	* src/gui/automaticspellchecker.h:
+	Don't split a word with apostrophe.
+
+2009-05-25  kitone  <kitone@gna.org>
+
+	* src/gui/automaticspellchecker.cc:
+	Change icon 'goto-bottom' to 'remove'.
+
+2009-05-25  kitone  <kitone@gna.org>
+
+	* src/spellchecker.cc:
+	Add debug msg.
+
+2009-05-23  kitone  <kitone@gna.org>
+
+	* src/gui/textviewcell.cc:
+	Add a SpellChecker capability to any TextViewCell.
+
+2009-05-23  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Add new files automaticspellchecker.h and automaticspellchecker.cc.
+
+	* src/gui/automaticspellchecker.cc:
+	* src/gui/automaticspellchecker.h:
+	Introduce a new class AutomaticSpellChecker.
+
+2009-05-23  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Add new files spellchecker.h and spellchecker.cc.
+
+	* src/spellchecker.cc:
+	* src/spellchecker.h:
+	Introduce a new class SpellChecker inside the libsubtitleeditor.
+
+2009-05-16  kitone  <kitone@gna.org>
+
+	* plugins/actions/preferences/dialog-preferences.glade:
+	* plugins/actions/preferences/interfacepage.h:
+	* src/defaultcfg.cc:
+	* src/subtitleview.cc:
+	Fix: bug #2341 : Add option to don't disable the actions during editing.
+
+2009-05-16  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	Fix: 'play/pause' doesn't work after 'play selection'.
+
+2009-05-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/patternmanager.cc:
+	* plugins/actions/textcorrection/patternmanager.h:
+	Maintain order of patterns with the same name.
+
+2009-05-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/Latn-fi.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-fr.common-error.se-pattern.in:
+	Update with policy value.
+
+2009-05-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/confirmationpage.h:
+	Select modified subtitles.
+
+2009-05-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/Latn-en.capitalization.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-en.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-fi.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-fr.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn.capitalization.se-pattern.in:
+	* plugins/actions/textcorrection/Latn.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn.hearing-impaired.se-pattern.in:
+	* plugins/actions/textcorrection/Makefile.am:
+	* plugins/actions/textcorrection/capitalizationpage.h:
+	* plugins/actions/textcorrection/textcorrection.cc:
+	Extract capitalization pattern from common-error to
+	capitalization.se-pattern. New Latn-fi pattern. Update from Gaupol
+	repository.
+
+2009-05-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/patternmanager.cc:
+	Fixed error in implementation. Poorly sorted patternmanager: get_patterns.
+
+2009-05-07  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	Fix: bug #10439 : Better project file.
+	Improve open/save with framerate, timing mode, edit timing mode, 
+	subtitle selection, video and waveform uri...
+
+2009-05-06  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/dialog-error-checking-preferences.glade:
+	* plugins/actions/scalesubtitles/dialog-scale-subtitles.glade:
+	* plugins/actions/splitdocument/dialog-split-document.glade:
+	* share/glade/dialog-script-properties.glade:
+	* share/glade/subtitleeditor.glade:
+	Fix Gtk warning: adjustment with non-zero page size is deprecated.
+
+2009-05-06  kitone  <kitone@gna.org>
+
+	* plugins/actions/styleeditor/dialog-style-editor.glade:
+	Fix Gtk warning: adjustment with non-zero page size is deprecated.
+
+2009-05-05  kitone  <kitone@gna.org>
+
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	New function select multiple subtitles.
+
+2009-05-04  kitone  <kitone@gna.org>
+
+	* src/vp/gstreamerplayer.cc:
+	Fix: Draw black canvas.
+
+2009-05-02  kitone  <kitone@gna.org>
+
+	* plugins/actions/movesubtitles/dialog-move-subtitles.glade:
+	* plugins/actions/movesubtitles/movesubtitles.cc:
+	Improvement of "Move Subtitles" with the option "Only selected subtitles".
+	Fix Gtk warning: adjustment with non-zero page size is deprecated.
+
+2009-05-02  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/mpsub/mpsub.cc:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	Fix: Debian bug #526155: FTBFS with GCC 4.4: missing #include.
+
+2009-04-28  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	* src/vp/gstreamerplayer.cc:
+	Fix: bug #7019. The black rectangle.
+
+2009-04-26  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change dependence of libxml++ >= 2.20. 
+	Fix: bug #13428.
+
+2009-04-26  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* src/isocodes.cc:
+	Fix: ISO_CODES* test.
+	Fix: bug #13428.
+
+2009-04-22  kitone  <kitone@gna.org>
+
+	* COPYING:
+	Update with GPLv3.
+
+2009-04-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/about/about.cc:
+	* plugins/actions/adjusttime/adjusttime.cc:
+	* plugins/actions/applytranslation/applytranslation.cc:
+	* plugins/actions/changeframerate/changeframerate.cc:
+	* plugins/actions/combinesubtitles/combinesubtitles.cc:
+	* plugins/actions/command/command.cc:
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.cc:
+	* plugins/actions/dialoguize/dialoguize.cc:
+	* plugins/actions/documentmanagement/documentmanagement.cc:
+	* plugins/actions/duplicatesubtitle/duplicatesubtitle.cc:
+	* plugins/actions/editcell/editcell.cc:
+	* plugins/actions/errorchecking/errorchecking.h:
+	* plugins/actions/errorchecking/errorcheckingplugin.cc:
+	* plugins/actions/errorchecking/errorcheckingpreferences.h:
+	* plugins/actions/errorchecking/maxcharactersperline.h:
+	* plugins/actions/errorchecking/maxlinepersubtitle.h:
+	* plugins/actions/errorchecking/mindisplaytime.h:
+	* plugins/actions/errorchecking/mingapbetweensubtitles.h:
+	* plugins/actions/errorchecking/overlapping.h:
+	* plugins/actions/errorchecking/toolongdisplaytime.h:
+	* plugins/actions/errorchecking/tooshortdisplaytime.h:
+	* plugins/actions/extendlength/extendlength.cc:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.cc:
+	* plugins/actions/findandreplace/findandreplace.cc:
+	* plugins/actions/insertsubtitle/insertsubtitle.cc:
+	* plugins/actions/italicize/italicize.cc:
+	* plugins/actions/joindocument/joindocument.cc:
+	* plugins/actions/moveafterprecedingsubtitle/moveafterprecedingsubtitle.cc:
+	* plugins/actions/movesubtitles/movesubtitles.cc:
+	* plugins/actions/plaintext/plaintext.cc:
+	* plugins/actions/preferences/documentpage.h:
+	* plugins/actions/preferences/extensionpage.h:
+	* plugins/actions/preferences/interfacepage.h:
+	* plugins/actions/preferences/preferencepage.h:
+	* plugins/actions/preferences/preferencesplugin.cc:
+	* plugins/actions/preferences/timingpage.h:
+	* plugins/actions/preferences/videoplayerpage.h:
+	* plugins/actions/preferences/waveformpage.h:
+	* plugins/actions/removesubtitle/removesubtitle.cc:
+	* plugins/actions/reversetextandtranslation/reversetextandtranslation.cc:
+	* plugins/actions/scalesubtitles/scalesubtitles.cc:
+	* plugins/actions/selection/selection.cc:
+	* plugins/actions/spellchecking/spellchecking.cc:
+	* plugins/actions/spellchecking/spellchecking.h:
+	* plugins/actions/splitdocument/splitdocument.cc:
+	* plugins/actions/splitsubtitle/splitsubtitle.cc:
+	* plugins/actions/styleeditor/styleeditor.cc:
+	* plugins/actions/styleeditor/styleeditor.h:
+	* plugins/actions/textcorrection/commonerrorpage.h:
+	* plugins/actions/textcorrection/confirmationpage.h:
+	* plugins/actions/textcorrection/hearingimpairedpage.h:
+	* plugins/actions/textcorrection/page.h:
+	* plugins/actions/textcorrection/pattern.cc:
+	* plugins/actions/textcorrection/pattern.h:
+	* plugins/actions/textcorrection/patternmanager.cc:
+	* plugins/actions/textcorrection/patternmanager.h:
+	* plugins/actions/textcorrection/patternspage.h:
+	* plugins/actions/textcorrection/taskspage.h:
+	* plugins/actions/textcorrection/textcorrection.cc:
+	* plugins/actions/timemodemanagement/timemodemanagement.cc:
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	* plugins/actions/viewmanager/viewmanager.cc:
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvd.h:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdntsc.cc:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdpal.cc:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/microdvd/microdvd.cc:
+	* plugins/subtitleformats/mpl2/mpl2.cc:
+	* plugins/subtitleformats/mpsub/mpsub.cc:
+	* plugins/subtitleformats/subrip/subrip.cc:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	* plugins/subtitleformats/subviewer2/subviewer2.cc:
+	* plugins/subtitleformats/timedtextauthoringformat1/timedtextauthoringformat1.cc:
+	* src/cfg.cc:
+	* src/cfg.h:
+	* src/color.cc:
+	* src/color.h:
+	* src/command.cc:
+	* src/command.h:
+	* src/commandsystem.cc:
+	* src/commandsystem.h:
+	* src/debug.cc:
+	* src/debug.h:
+	* src/defaultcfg.cc:
+	* src/defaultcfg.h:
+	* src/document.cc:
+	* src/document.h:
+	* src/documentsystem.cc:
+	* src/documentsystem.h:
+	* src/encodings.cc:
+	* src/encodings.h:
+	* src/error.h:
+	* src/extension.cc:
+	* src/extension.h:
+	* src/extension/action.cc:
+	* src/extension/action.h:
+	* src/extension/subtitleformat.h:
+	* src/extensioninfo.cc:
+	* src/extensioninfo.h:
+	* src/extensionmanager.cc:
+	* src/extensionmanager.h:
+	* src/filereader.h:
+	* src/filewriter.cc:
+	* src/filewriter.h:
+	* src/gstreamer_utility.cc:
+	* src/gstreamer_utility.h:
+	* src/gtkmm_utility.cc:
+	* src/gtkmm_utility.h:
+	* src/gui/application.cc:
+	* src/gui/application.h:
+	* src/gui/cellrenderercustom.cc:
+	* src/gui/cellrenderercustom.h:
+	* src/gui/comboboxencoding.cc:
+	* src/gui/comboboxencoding.h:
+	* src/gui/comboboxnewline.cc:
+	* src/gui/comboboxnewline.h:
+	* src/gui/comboboxsubtitleformat.cc:
+	* src/gui/comboboxsubtitleformat.h:
+	* src/gui/comboboxvideo.cc:
+	* src/gui/comboboxvideo.h:
+	* src/gui/dialogcharactercodings.cc:
+	* src/gui/dialogcharactercodings.h:
+	* src/gui/dialogfilechooser.cc:
+	* src/gui/dialogfilechooser.h:
+	* src/gui/dialogutility.cc:
+	* src/gui/dialogutility.h:
+	* src/gui/menubar.cc:
+	* src/gui/menubar.h:
+	* src/gui/spinbuttontime.cc:
+	* src/gui/spinbuttontime.h:
+	* src/gui/statusbar.cc:
+	* src/gui/statusbar.h:
+	* src/gui/textviewcell.cc:
+	* src/gui/textviewcell.h:
+	* src/gui/treeviewextensionmanager.cc:
+	* src/gui/treeviewextensionmanager.h:
+	* src/i18n.h:
+	* src/isocodes.cc:
+	* src/isocodes.h:
+	* src/main.cc:
+	* src/options.cc:
+	* src/options.h:
+	* src/player.h:
+	* src/scriptinfo.cc:
+	* src/scriptinfo.h:
+	* src/style.cc:
+	* src/style.h:
+	* src/stylemodel.cc:
+	* src/stylemodel.h:
+	* src/styles.cc:
+	* src/styles.h:
+	* src/subtitle.cc:
+	* src/subtitle.h:
+	* src/subtitleeditorwindow.cc:
+	* src/subtitleeditorwindow.h:
+	* src/subtitleformatio.cc:
+	* src/subtitleformatio.h:
+	* src/subtitleformatsystem.h:
+	* src/subtitlemodel.cc:
+	* src/subtitlemodel.h:
+	* src/subtitles.cc:
+	* src/subtitles.h:
+	* src/subtitletags.cc:
+	* src/subtitletags.h:
+	* src/subtitletime.cc:
+	* src/subtitletime.h:
+	* src/subtitleview.cc:
+	* src/subtitleview.h:
+	* src/timeutility.cc:
+	* src/timeutility.h:
+	* src/utility.cc:
+	* src/utility.h:
+	* src/vp/gstreamerplayer.cc:
+	* src/vp/gstreamerplayer.h:
+	* src/vp/videoplayer.cc:
+	* src/vp/videoplayer.h:
+	* src/waveform.cc:
+	* src/waveform.h:
+	* src/waveformmanager.h:
+	* src/we/waveformeditor.cc:
+	* src/we/waveformeditor.h:
+	* src/we/waveformgenerator.cc:
+	* src/we/waveformgenerator.h:
+	* src/we/waveformrenderer.cc:
+	* src/we/waveformrenderer.h:
+	* src/we/waveformrenderercairo.cc:
+	* src/we/waveformrenderergl.cc:
+	* src/widget_config_utility.cc:
+	* src/widget_config_utility.h:
+	Update copyright to 2005-2009.
+
+2009-04-22  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2009-04-22  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.31.0 release.
+
+2009-04-18  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/Latn-fr.common-error.se-pattern.in:
+	Add "Spaces around square brackets" rule.
+
+2009-04-08  kitone  <kitone@gna.org>
+
+	* src/vp/videoplayer.cc:
+	* src/vp/videoplayer.h:
+	Fix: bug #12682 : 0.30.0 deleting a subtitle while playing throws segfault.
+
+2009-04-08  kitone  <kitone@gna.org>
+
+	* src/document.cc:
+	Add debug message to emit_signal function.
+
+2009-03-27  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/Latn-fr.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Makefile.am:
+	New French pattern file.
+
+2009-03-27  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/confirmationpage.h:
+	Used the CellRendererCustom with multiline support.
+
+2009-03-27  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gui/cellrenderercustom.cc:
+	* src/gui/cellrenderercustom.h:
+	* src/gui/textviewcell.cc:
+	* src/gui/textviewcell.h:
+	* src/subtitleview.cc:
+	New files cellrenderercustom and textviewcell.
+	Extract and cleanup the code from subtitleview to new files.
+
+2009-03-19  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/overlapping.h:
+	Fix: bug #13069 : Error checker reports back-to-back subtitles as "overlapping".
+	Patch: Frank Luithle <sigi>
+
+2009-01-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/textcorrection/Latn.common-error.se-pattern.in:
+	Fix: sentence rule.
+
+2009-01-21  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	* plugins/actions/textcorrection/Latn-en-US.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-en.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn-en.hearing-impaired.se-pattern.in:
+	* plugins/actions/textcorrection/Latn.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/Latn.hearing-impaired.se-pattern.in:
+	* plugins/actions/textcorrection/Makefile.am:
+	* plugins/actions/textcorrection/Zyyy.common-error.se-pattern.in:
+	* plugins/actions/textcorrection/assistant-text-correction.glade:
+	* plugins/actions/textcorrection/commonerrorpage.h:
+	* plugins/actions/textcorrection/confirmationpage.h:
+	* plugins/actions/textcorrection/hearingimpairedpage.h:
+	* plugins/actions/textcorrection/page.h:
+	* plugins/actions/textcorrection/pattern.cc:
+	* plugins/actions/textcorrection/pattern.h:
+	* plugins/actions/textcorrection/patternmanager.cc:
+	* plugins/actions/textcorrection/patternmanager.h:
+	* plugins/actions/textcorrection/patternspage.h:
+	* plugins/actions/textcorrection/taskspage.h:
+	* plugins/actions/textcorrection/textcorrection.cc:
+	* plugins/actions/textcorrection/textcorrection.se-plugin.in:
+	New plugin 'textcorrection'.
+
+2009-01-13  kitone  <kitone@gna.org>
+
+	Introduce se-pattern support.
+
+	* acinclude.m4:
+	Add intltool_se_plugin.m4 file.
+
+	* configure.in:
+	Add IT_SE_PATTERN_INTLTOOL marco.
+
+	* prepare-po.sh:
+	Add se-pattern.in file.
+
+2009-01-13  kitone  <kitone@gna.org>
+
+	* src/waveform.cc:
+	Fix: bug #12847 : Waveform creation from video causes a crash with file name contains spaces.
+
+2009-01-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change ISO_CODES_PATH for xml files and add iso code 15924 test.
+
+	* plugins/actions/spellchecking/spellchecking.cc:
+	Use the new isocodes code and sort the language per translated name.
+
+	* src/Makefile.am:
+	Add isocodes files.
+
+	* src/isocodes.cc:
+	* src/isocodes.h:
+	New file to manage iso-codes.
+
+	* src/utility.cc:
+	* src/utility.h:
+	Remove iso-codes function.
+
+2009-01-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/preferences/dialog-preferences.glade:
+	Fix Gtk warning: adjustment with non-zero page size is deprecated and
+	default color.
+
+2008-12-22  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/preferences/videoplayerpage.h:
+	* src/Makefile.am:
+	* src/defaultcfg.cc:
+	Patch: Luboš Staněk
+	Enable changing of default audio and video sink preferences in the build time.
+	Add pulsesink to audio outputs and fix OSS sing ID.
+
+2008-12-22  kitone  <kitone@gna.org>
+
+	* src/extensionmanager.cc:
+	Revert bug #12651.
+
+2008-12-02  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/viewmanager/Makefile.am:
+	Fix: Absolute path for dev directory with $(abs_srcdir).
+
+2008-12-02  kitone  <kitone@gna.org>
+
+	* src/extensionmanager.cc:
+	Fix: bug #12651 : 0.30.0 build error.
+
+2008-12-02  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/about/Makefile.am:
+	* plugins/actions/adjusttime/Makefile.am:
+	* plugins/actions/applytranslation/Makefile.am:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/combinesubtitles/Makefile.am:
+	* plugins/actions/command/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/dialoguize/Makefile.am:
+	* plugins/actions/documentmanagement/Makefile.am:
+	* plugins/actions/duplicatesubtitle/Makefile.am:
+	* plugins/actions/editcell/Makefile.am:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/extendlength/Makefile.am:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/insertsubtitle/Makefile.am:
+	* plugins/actions/italicize/Makefile.am:
+	* plugins/actions/joindocument/Makefile.am:
+	* plugins/actions/moveafterprecedingsubtitle/Makefile.am:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/plaintext/Makefile.am:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/removesubtitle/Makefile.am:
+	* plugins/actions/reversetextandtranslation/Makefile.am:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/selection/Makefile.am:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitsubtitle/Makefile.am:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/timemodemanagement/Makefile.am:
+	* plugins/actions/videoplayermanagement/Makefile.am:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	* plugins/subtitleformats/adobeencoredvd/Makefile.am:
+	* plugins/subtitleformats/advancedsubstationalpha/Makefile.am:
+	* plugins/subtitleformats/microdvd/Makefile.am:
+	* plugins/subtitleformats/mpl2/Makefile.am:
+	* plugins/subtitleformats/mpsub/Makefile.am:
+	* plugins/subtitleformats/subrip/Makefile.am:
+	* plugins/subtitleformats/substationalpha/Makefile.am:
+	* plugins/subtitleformats/subtitleeditorproject/Makefile.am:
+	* plugins/subtitleformats/subviewer2/Makefile.am:
+	* plugins/subtitleformats/timedtextauthoringformat1/Makefile.am:
+	* src/Makefile.am:
+	* src/defaultcfg.cc:
+	* src/defaultcfg.h:
+	* src/main.cc:
+	Fix: bug #12649
+	subtitleeditor 0.30.0 does not build with LDFLAGS='-Wl,--as-needed -Wl,--no-undefined'
+
+2008-11-29  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-11-26  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.30.0 release.
+
+2008-11-25  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+	* plugins/actions/spellchecking/spellchecking.cc:
+	Catch enchant exception.
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* src/gui/treeviewextensionmanager.cc:
+	* src/gui/treeviewextensionmanager.h:
+	Sort the extensions by categorie and by locale name. Add separator between
+	categories.
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/videoplayermanagement.cc:
+	* plugins/actions/viewmanager/viewmanager.cc:
+	Fix typo. (Patch: Luboš Staněk)
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* src/gui/dialogfilechooser.cc:
+	Fix typo. (Patch: Luboš Staněk)
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* acinclude.m4:
+	* configure.in:
+	Speeds up the build with ccache option. (Patch: Luboš Staněk)
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/errorcheckingplugin.cc:
+	* plugins/actions/spellchecking/spellchecking.cc:
+	* share/menubar.xml:
+	Add placeholder 'checking'.
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Rename "Open Waveform" to "Open Waveform From File".
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* src/gui/dialogfilechooser.cc:
+	Add file filter "Waveform & Media" (default).
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/wavefrommanagement/waveformmanagement.cc:
+	Add action "Generate Wavefrom From Video". Don't reload the player if the
+	file is the same.
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* src/player.h:
+	* src/vp/gstreamerplayer.cc:
+	* src/vp/gstreamerplayer.h:
+	Add function get_uri.
+
+2008-11-22  kitone  <kitone@gna.org>
+
+	* plugins/actions/joindocument/joindocument.cc:
+	Move subtitles added after the last original subtitle.
+
+2008-11-20  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/toolongdisplaytime.h:
+	* plugins/actions/errorchecking/tooshortdisplaytime.h:
+	Remove ngettext for gettext.
+
+2008-11-17  kitone  <kitone@gna.org>
+
+	* src/we/waveformrenderergl.cc:
+	Fix: Restore header <gl/gl.h> to <GL/gl.h>.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* all files {h,cc}:
+	convert all files to lowercase.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/cfg.cc:
+	* src/cfg.cc:
+	Rename file Config to cfg.
+
+	* src/CommandSystem.cc:
+	* src/Config.cc:
+	* src/Config.h:
+	* src/Document.cc:
+	* src/Encodings.cc:
+	* src/ExtensionManager.cc:
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	* src/extension/Action.h:
+	* src/gui/ComboBoxEncoding.cc:
+	* src/gui/ComboBoxVideo.cc:
+	* src/gui/DialogCharacterCodings.cc:
+	* src/gui/MenuBar.h:
+	* src/utility.cc:
+	* src/widget_config_utility.cc:
+	Update with new cfg filename.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/Signal.cc:
+	* src/Signal.h:
+	Remove files Signal.
+
+	* src/Document.cc:
+	* src/Document.h:
+	Add Signal code.
+
+	* src/i18n.h:
+	* src/utility.h:
+	Fix: config header.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/i18n.h:
+	New file. Move i18n core from utility.
+
+	* plugins/actions/adjusttime/AdjustTime.cc:
+	* plugins/actions/applytranslation/ApplyTranslation.cc:
+	* plugins/actions/combinesubtitles/CombineSubtitles.cc:
+	* plugins/actions/command/Command.cc:
+	* plugins/actions/dialoguize/Dialoguize.cc:
+	* plugins/actions/duplicatesubtitle/DuplicateSubtitle.cc:
+	* plugins/actions/editcell/EditCell.cc:
+	* plugins/actions/extendlength/ExtendLength.cc:
+	* plugins/actions/insertsubtitle/InsertSubtitle.cc:
+	* plugins/actions/italicize/Italicize.cc:
+	* plugins/actions/joindocument/JoinDocument.cc:
+	* plugins/actions/moveafterprecedingsubtitle/MoveAfterPrecedingSubtitle.cc:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* plugins/actions/removesubtitle/RemoveSubtitle.cc:
+	* plugins/actions/reversetextandtranslation/ReverseTextAndTranslation.cc:
+	* plugins/actions/selection/Selection.cc:
+	* plugins/actions/spellchecking/SpellChecking.h:
+	* plugins/actions/splitsubtitle/SplitSubtitle.cc:
+	* plugins/actions/timemodemanagement/TimeModeManagement.cc:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	* src/Command.cc:
+	* src/DocumentSystem.cc:
+	* src/Encodings.cc:
+	* src/Encodings.h:
+	* src/Extension.cc:
+	* src/FileReader.cc:
+	* src/FileWriter.cc:
+	* src/Options.cc:
+	* src/SubtitleFormatIO.cc:
+	* src/SubtitleFormatSystem.cc:
+	* src/SubtitleModel.cc:
+	* src/SubtitleView.cc:
+	* src/TimeUtility.cc:
+	* src/gui/ComboBoxEncoding.cc:
+	* src/gui/ComboBoxVideo.cc:
+	* src/gui/DialogCharacterCodings.cc:
+	* src/gui/DialogFileChooser.h:
+	* src/main.cc:
+	* src/utility.h:
+	Cleanup header dependences.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* src/FileWriter.cc:
+	* src/FileWriter.h:
+	Remove std::ostringstream and add write function.
+
+	* plugins/actions/plaintext/PlainText.cc:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvd.h:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/microdvd/microdvd.cc:
+	* plugins/subtitleformats/mpl2/mpl2.cc:
+	* plugins/subtitleformats/mpsub/mpsub.cc:
+	* plugins/subtitleformats/subrip/subrip.cc:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	* plugins/subtitleformats/subviewer2/subviewer2.cc:
+	* plugins/subtitleformats/timedtextauthoringformat1/timedtextauthoringformat1.cc:
+	Update with FileWriter.write function.
+
+	* TODO:
+	Update.
+
+2008-11-15  kitone  <kitone@gna.org>
+
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdntsc.se-plugin.in:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdpal.se-plugin.in:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.se-plugin.in:
+	* plugins/subtitleformats/substationalpha/substationalpha.se-plugin.in:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.se-plugin.in:
+	Fix: Name and Description.
+
+2008-11-15  kitone  <kitone@gna.org>
+
+	The subtitle formats are now plugins.
+
+	* configure.in:
+	* plugins/Makefile.am:
+	* plugins/subtitleformats/Makefile.am:
+	* plugins/subtitleformats/adobeencoredvd/Makefile.am:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvd.h:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdntsc.cc:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdntsc.se-plugin.in:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdpal.cc:
+	* plugins/subtitleformats/adobeencoredvd/adobeencoredvdpal.se-plugin.in:
+	* plugins/subtitleformats/advancedsubstationalpha/Makefile.am:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.cc:
+	* plugins/subtitleformats/advancedsubstationalpha/advancedsubstationalpha.se-plugin.in:
+	* plugins/subtitleformats/microdvd/Makefile.am:
+	* plugins/subtitleformats/microdvd/microdvd.cc:
+	* plugins/subtitleformats/microdvd/microdvd.se-plugin.in:
+	* plugins/subtitleformats/mpl2/Makefile.am:
+	* plugins/subtitleformats/mpl2/mpl2.cc:
+	* plugins/subtitleformats/mpl2/mpl2.se-plugin.in:
+	* plugins/subtitleformats/mpsub/Makefile.am:
+	* plugins/subtitleformats/mpsub/mpsub.cc:
+	* plugins/subtitleformats/mpsub/mpsub.se-plugin.in:
+	* plugins/subtitleformats/subrip/Makefile.am:
+	* plugins/subtitleformats/subrip/subrip.cc:
+	* plugins/subtitleformats/subrip/subrip.se-plugin.in:
+	* plugins/subtitleformats/substationalpha/Makefile.am:
+	* plugins/subtitleformats/substationalpha/substationalpha.cc:
+	* plugins/subtitleformats/substationalpha/substationalpha.se-plugin.in:
+	* plugins/subtitleformats/subtitleeditorproject/Makefile.am:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.cc:
+	* plugins/subtitleformats/subtitleeditorproject/subtitleeditorproject.se-plugin.in:
+	* plugins/subtitleformats/subviewer2/Makefile.am:
+	* plugins/subtitleformats/subviewer2/subviewer2.cc:
+	* plugins/subtitleformats/subviewer2/subviewer2.se-plugin.in:
+	* plugins/subtitleformats/timedtextauthoringformat1/Makefile.am:
+	* plugins/subtitleformats/timedtextauthoringformat1/timedtextauthoringformat1.cc:
+	* plugins/subtitleformats/timedtextauthoringformat1/timedtextauthoringformat1.se-plugin.in:
+	The subtitle formats are now plugins.
+
+	* src/extension/Action.h:
+	* src/Extension.h:
+	* src/extension/SubtitleFormat.h:
+	Move REGISTER_EXTENSION macro from Action to Extension.
+	New file SubtitleFormat.
+	
+	* src/Makefile.am:
+	* src/SubtitleFormatFactory.h:
+	* src/SubtitleFormat.cc:
+	* src/SubtitleFormat.h:
+	* src/SubtitleFormatIO.cc:
+	* src/SubtitleFormatIO.h:
+	Rename SubtitleFormat to SubtitleFormatIO.
+	Remove file SubtitleFormatFactory.
+
+	* src/SubtitleFormatSystem.cc:
+	* src/SubtitleFormatSystem.h:
+	Get SubtitleFormat from ExtensionManager.
+
+	* src/formats/AdobeEncoreDVD.h:
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/MPL2.h:
+	* src/formats/MPsub.h:
+	* src/formats/MicroDVD.h:
+	* src/formats/SubRip.h:
+	* src/formats/SubStationAlpha.h:
+	* src/formats/SubViewer2.h:
+	* src/formats/SubtitleEditorProject.h:
+	* src/formats/TimedTextAuthoringFormat1.h:
+	Remove files.
+
+	* src/gui/DialogFileChooser.cc:
+	Fix: file pattern.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* src/SubtitleEditorWindow.h:
+	* src/WaveformManager.h:
+	New interface for the waveform manager.
+
+	* plugins/actions/wavefrommanagement/WaveformManagement.cc:
+	Use the new interface WaveformManager.
+
+	* src/Makefile.am:
+	* src/Waveform.cc:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	* src/we/WaveformEditor.cc:
+	* src/we/WaveformEditor.h:
+	Move the WaveformEditor, gstreamer_utility from the libsubtitleeditor 
+	to subtitleeditor. Remove gstreamer dependence in libsubtitleeditor.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/documentmanagement/DocumentManagement.cc:
+	* plugins/actions/videoplayermanagement/VideoPlayerManagement.cc:
+	* src/SubtitleEditorWindow.h:
+	* src/extension/Action.h:
+	* src/gui/Application.h:
+	Hide Player and WaveformEditor.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* src/vp/VideoPlayer.cc:
+	* src/vp/VideoPlayer.h:
+	Hide GStreamerPlayer for Player.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Cleanup.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Remove unittest. (Patch: Luboš Staněk)
+
+	* src/gui/MenuBar.cc:
+	Rename "_Exts" to "_Extensions".  (Patch: Luboš Staněk)
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/viewmanager/ViewManager.cc:
+	Clean code and fix exec warning.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/about/about.se-plugin.in:
+	* plugins/actions/adjusttime/adjusttime.se-plugin.in:
+	* plugins/actions/applytranslation/applytranslation.se-plugin.in:
+	* plugins/actions/changeframerate/changeframerate.se-plugin.in:
+	* plugins/actions/combinesubtitles/combinesubtitles.se-plugin.in:
+	* plugins/actions/command/command.se-plugin.in:
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.se-plugin.in:
+	* plugins/actions/dialoguize/dialoguize.se-plugin.in:
+	* plugins/actions/documentmanagement/documentmanagement.se-plugin.in:
+	* plugins/actions/duplicatesubtitle/duplicatesubtitle.se-plugin.in:
+	* plugins/actions/editcell/editcell.se-plugin.in:
+	* plugins/actions/errorchecking/errorchecking.se-plugin.in:
+	* plugins/actions/extendlength/extendlength.se-plugin.in:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.se-plugin.in:
+	* plugins/actions/findandreplace/findandreplace.se-plugin.in:
+	* plugins/actions/insertsubtitle/insertsubtitle.se-plugin.in:
+	* plugins/actions/italicize/italicize.se-plugin.in:
+	* plugins/actions/joindocument/joindocument.se-plugin.in:
+	* plugins/actions/moveafterprecedingsubtitle/moveafterprecedingsubtitle.se-plugin.in:
+	* plugins/actions/movesubtitles/movesubtitles.se-plugin.in:
+	* plugins/actions/plaintext/plaintext.se-plugin.in:
+	* plugins/actions/preferences/preferences.se-plugin.in:
+	* plugins/actions/removesubtitle/removesubtitle.se-plugin.in:
+	* plugins/actions/reversetextandtranslation/reversetextandtranslation.se-plugin.in:
+	* plugins/actions/scalesubtitles/scalesubtitles.se-plugin.in:
+	* plugins/actions/selection/selection.se-plugin.in:
+	* plugins/actions/splitdocument/splitdocument.se-plugin.in:
+	* plugins/actions/splitsubtitle/splitsubtitle.se-plugin.in:
+	* plugins/actions/styleeditor/styleeditor.se-plugin.in:
+	* plugins/actions/timemodemanagement/timemodemanagement.se-plugin.in:
+	* plugins/actions/videoplayermanagement/videoplayermanagement.se-plugin.in:
+	* plugins/actions/viewmanager/viewmanager.se-plugin.in:
+	* plugins/actions/wavefrommanagement/waveformmanagement.se-plugin.in:
+	Fix: .se-plugin texts fixes. (Patch: Luboš Staněk)
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.glade:
+	Fix: modified external player glade file to exclude replaceable tokens from
+	the translation. (Patch: Luboš Staněk)
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/ChangeFramerate.cc:
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	* plugins/actions/findandreplace/FindAndReplace.cc:
+	* plugins/actions/movesubtitles/MoveSubtitles.cc:
+	* plugins/actions/scalesubtitles/ScaleSubtitles.cc:
+	* plugins/actions/spellchecking/SpellChecking.cc:
+	* plugins/actions/splitdocument/SplitDocument.cc:
+	* plugins/actions/styleeditor/StyleEditor.cc:
+	* plugins/actions/viewmanager/ViewManager.cc:
+	Fix: missing header memory. (Patch: Luboš Staněk)
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/about/Makefile.am:
+	* plugins/actions/adjusttime/Makefile.am:
+	* plugins/actions/applytranslation/Makefile.am:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/combinesubtitles/Makefile.am:
+	* plugins/actions/command/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/dialoguize/Makefile.am:
+	* plugins/actions/documentmanagement/Makefile.am:
+	* plugins/actions/duplicatesubtitle/Makefile.am:
+	* plugins/actions/editcell/Makefile.am:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/extendlength/Makefile.am:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/insertsubtitle/Makefile.am:
+	* plugins/actions/italicize/Makefile.am:
+	* plugins/actions/joindocument/Makefile.am:
+	* plugins/actions/moveafterprecedingsubtitle/Makefile.am:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/plaintext/Makefile.am:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/removesubtitle/Makefile.am:
+	* plugins/actions/reversetextandtranslation/Makefile.am:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/selection/Makefile.am:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitsubtitle/Makefile.am:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/timemodemanagement/Makefile.am:
+	* plugins/actions/videoplayermanagement/Makefile.am:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	* src/ExtensionInfo.cc:
+	* src/ExtensionInfo.h:
+	* src/ExtensionManager.cc:
+	* src/ExtensionManager.h:
+	* src/Makefile.am:
+	Respect the Filesystem Hierarchy Standard.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/ErrorCheckingPlugin.cc:
+	Fix: segfault with exit of SE if the windows is open.
+
+2008-11-14  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/utility.cc:
+	* src/utility.h:
+	Move is_num code in SubtitleView.cc.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/about/About.cc:
+	* plugins/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/gui/Application.cc:
+	* src/gui/MenuBar.cc:
+	* src/utility.cc:
+	* src/utility.h:
+	Remove get_share_dir function (utility) and fix icon for all windows.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/errorchecking/ErrorCheckingPreferences.h:
+	* plugins/actions/externalvideoplayer/ExternalVideoPlayer.cc:
+	* plugins/actions/findandreplace/FindAndReplace.cc:
+	* plugins/actions/preferences/PreferencePage.h:
+	Migrate to widget_config_utility.
+
+	* src/utility.cc:
+	* src/utility.h:
+	Remove WidgetToConfig code.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/widget_config_utility.cc:
+	* src/widget_config_utility.h:
+	New files widget_config_utility.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/spellchecking/SpellChecking.h:
+	* src/gtkmm_utility.h:
+	Move ComboBoxText to spellChecking file.
+
+	* src/utility.h:
+	Remove utility::get_widget_derived functions.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/ChangeFramerate.cc:
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	* plugins/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* plugins/actions/errorchecking/ErrorCheckingPreferences.h:
+	* plugins/actions/externalvideoplayer/ExternalVideoPlayer.cc:
+	* plugins/actions/findandreplace/FindAndReplace.cc:
+	* plugins/actions/movesubtitles/MoveSubtitles.cc:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* plugins/actions/scalesubtitles/ScaleSubtitles.cc:
+	* plugins/actions/spellchecking/SpellChecking.cc:
+	* plugins/actions/splitdocument/SplitDocument.cc:
+	* plugins/actions/styleeditor/StyleEditor.cc:
+	* plugins/actions/viewmanager/ViewManager.cc:
+	Migrate to gktmm_utility::get_widget_derived.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/ExtensionManager.cc:
+	Support SE_DEV.
+
+	* src/Makefile.am:
+	Add DEV paths.
+
+	* src/gui/DialogCharacterCodings.cc:
+	* src/gui/DialogFileChooser.cc:
+	* src/main.cc:
+	Migrate to gktmm_utility::get_widget_derived.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gtkmm_utility.cc:
+	* src/gtkmm_utility.h:
+	New files.
+
+	* src/utility.h:
+	define SE_DEV_VALUE for dev help.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.glade:
+	Fix: do not translate stock items. (Patch: Luboš Staněk)
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gstreamer_utility.cc:
+	* src/gstreamer_utility.h:
+	* src/utility.cc:
+	* src/utility.h:
+	* src/vp/GStreamerPlayer.cc:
+	* src/we/WaveformGenerator.cc:
+	Move GStreamer utility code in new file gstreamer_utility.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Add [type: gettext/ini] before the se-plugin name.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/Options.cc:
+	* src/Options.h:
+	* src/main.cc:
+	Remove unittest.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* src/Default.h:
+	* src/Makefile.am:
+	* src/unittest/adobe.encore.dvd.ntsc.format:
+	* src/unittest/adobe.encore.dvd.ntsc.format.euc-jp:
+	* src/unittest/adobe.encore.dvd.pal.format:
+	* src/unittest/adobe.encore.dvd.pal.format.euc-jp:
+	* src/unittest/ass.format:
+	* src/unittest/ass.format.euc-jp:
+	* src/unittest/microdvd.format:
+	* src/unittest/microdvd.format.euc-jp:
+	* src/unittest/mpl2.format:
+	* src/unittest/mpl2.format.euc-jp:
+	* src/unittest/mpsub.format:
+	* src/unittest/mpsub.format.euc-jp:
+	* src/unittest/ssa.format:
+	* src/unittest/ssa.format.euc-jp:
+	* src/unittest/subrip.format:
+	* src/unittest/subrip.format.euc-jp:
+	* src/unittest/subtitle.editor.project.format:
+	* src/unittest/subtitle.editor.project.format.euc-jp:
+	* src/unittest/subviewer2.0.format:
+	* src/unittest/subviewer2.0.format.euc-jp:
+	* src/unittest/testColor.cc:
+	* src/unittest/testSubtitleTime.cc:
+	* src/unittest/transcript:
+	* src/unittest/unittest.cc:
+	Remove unsed file and unittest.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	Fix: wrong directory.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* plugins/actions/about/Makefile.am:
+	* plugins/actions/about/about.se-plugin.desktop.in:
+	* plugins/actions/adjusttime/Makefile.am:
+	* plugins/actions/adjusttime/adjusttime.se-plugin.desktop.in:
+	* plugins/actions/applytranslation/Makefile.am:
+	* plugins/actions/applytranslation/applytranslation.se-plugin.desktop.in:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/changeframerate/changeframerate.se-plugin.desktop.in:
+	* plugins/actions/combinesubtitles/Makefile.am:
+	* plugins/actions/combinesubtitles/combinesubtitles.se-plugin.desktop.in:
+	* plugins/actions/command/Makefile.am:
+	* plugins/actions/command/command.se-plugin.desktop.in:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.se-plugin.desktop.in:
+	* plugins/actions/dialoguize/Makefile.am:
+	* plugins/actions/dialoguize/dialoguize.se-plugin.desktop.in:
+	* plugins/actions/documentmanagement/Makefile.am:
+	* plugins/actions/documentmanagement/documentmanagement.se-plugin.desktop.in:
+	* plugins/actions/duplicatesubtitle/Makefile.am:
+	* plugins/actions/duplicatesubtitle/duplicatesubtitle.se-plugin.desktop.in:
+	* plugins/actions/editcell/Makefile.am:
+	* plugins/actions/editcell/editcell.se-plugin.desktop.in:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/errorchecking/errorchecking.se-plugin.desktop.in:
+	* plugins/actions/extendlength/Makefile.am:
+	* plugins/actions/extendlength/extendlength.se-plugin.desktop.in:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.se-plugin.desktop.in:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/findandreplace/findandreplace.se-plugin.desktop.in:
+	* plugins/actions/insertsubtitle/Makefile.am:
+	* plugins/actions/insertsubtitle/insertsubtitle.se-plugin.desktop.in:
+	* plugins/actions/italicize/Makefile.am:
+	* plugins/actions/italicize/italicize.se-plugin.desktop.in:
+	* plugins/actions/joindocument/Makefile.am:
+	* plugins/actions/joindocument/joindocument.se-plugin.desktop.in:
+	* plugins/actions/moveafterprecedingsubtitle/Makefile.am:
+	* plugins/actions/moveafterprecedingsubtitle/moveafterprecedingsubtitle.se-plugin.desktop.in:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/movesubtitles/movesubtitles.se-plugin.desktop.in:
+	* plugins/actions/plaintext/Makefile.am:
+	* plugins/actions/plaintext/plaintext.se-plugin.desktop.in:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/preferences.se-plugin.desktop.in:
+	* plugins/actions/removesubtitle/Makefile.am:
+	* plugins/actions/removesubtitle/removesubtitle.se-plugin.desktop.in:
+	* plugins/actions/reversetextandtranslation/Makefile.am:
+	* plugins/actions/reversetextandtranslation/reversetextandtranslation.se-plugin.desktop.in:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/scalesubtitles/scalesubtitles.se-plugin.desktop.in:
+	* plugins/actions/selection/Makefile.am:
+	* plugins/actions/selection/selection.se-plugin.desktop.in:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/spellchecking/spellchecking.se-plugin.desktop.in:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitdocument/splitdocument.se-plugin.desktop.in:
+	* plugins/actions/splitsubtitle/Makefile.am:
+	* plugins/actions/splitsubtitle/splitsubtitle.se-plugin.desktop.in:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/styleeditor/styleeditor.se-plugin.desktop.in:
+	* plugins/actions/timemodemanagement/Makefile.am:
+	* plugins/actions/timemodemanagement/timemodemanagement.se-plugin.desktop.in:
+	* plugins/actions/videoplayermanagement/Makefile.am:
+	* plugins/actions/videoplayermanagement/videoplayermanagement.se-plugin.desktop.in:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/viewmanager/viewmanager.se-plugin.desktop.in:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	* plugins/actions/wavefrommanagement/waveformmanagement.se-plugin.desktop.in:
+	* prepare-po.sh:
+	Rename se-plugin.desktop.in to se-plugin.in
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* plugins/actions/about/Makefile.am:
+	* plugins/actions/adjusttime/Makefile.am:
+	* plugins/actions/applytranslation/Makefile.am:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/combinesubtitles/Makefile.am:
+	* plugins/actions/command/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/dialoguize/Makefile.am:
+	* plugins/actions/documentmanagement/Makefile.am:
+	* plugins/actions/duplicatesubtitle/Makefile.am:
+	* plugins/actions/editcell/Makefile.am:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/extendlength/Makefile.am:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/insertsubtitle/Makefile.am:
+	* plugins/actions/italicize/Makefile.am:
+	* plugins/actions/joindocument/Makefile.am:
+	* plugins/actions/moveafterprecedingsubtitle/Makefile.am:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/plaintext/Makefile.am:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/removesubtitle/Makefile.am:
+	* plugins/actions/reversetextandtranslation/Makefile.am:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/selection/Makefile.am:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitsubtitle/Makefile.am:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/timemodemanagement/Makefile.am:
+	* plugins/actions/videoplayermanagement/Makefile.am:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	Cleanup in the Makefile.am (Patch: Luboš Staněk)
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change dependence of glibmm >= 2.16.3
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Big cleanup in the autohell!
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Fix: GETTEXT_PACKAGE.
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Add desktop.in files.
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* acinclude.m4:
+	* configure.in:
+	Add m4/intltool_se_plugin.m4. (Patch: Luboš Staněk)
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* share/Makefile.am:
+	* src/Makefile.am:
+	Clean the installation directory. (Patch: Luboš Staněk)
+
+2008-11-11  kitone  <kitone@gna.org>
+
+	* src/ExtensionManager.cc:
+	Fix: segfault with debug-msg.
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	Remove debug code.
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/actions/TryToExtendToPerfect.cc:
+	Remove deprecated files.
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/Plugin.cc:
+	* src/Plugin.h:
+	* src/PluginSystem.cc:
+	* src/PluginSystem.h:
+	* src/gui/Application.h:
+	Remove deprecated Plugin files.
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Fix: Change to tar-ustar. (name > 99)
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/VideoPlayerManagement.cc:
+	* plugins/actions/viewmanager/ViewManager.cc:
+	Fix: add tooltips.
+
+2008-11-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/externalvideoplayer/ExternalVideoPlayer.cc:
+	Fix: action name and add tooltip.
+
+2008-11-09  kitone  <kitone@gna.org>
+
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	Work now without menubar.xml.
+
+2008-11-09  kitone  <kitone@gna.org>
+
+	* src/Waveform.cc:
+	* src/we/WaveformGenerator.cc:
+	* src/we/WaveformRenderer.cc:
+	Improvement by removing unnecessary conversion.
+
+2008-11-08  kitone  <kitone@gna.org>
+
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* plugins/actions/preferences/PreviewPage.h:
+	* plugins/actions/preferences/dialog-preferences.glade:
+	Remove Preview (External Video Player) code/page.
+
+2008-11-08  kitone  <kitone@gna.org>
+
+	* plugins/actions/externalvideoplayer/ExternalVideoPlayer.cc:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/externalvideoplayer/dialog-external-video-player-preferences.glade:
+	Add preferences dialog.
+
+2008-11-08  kitone  <kitone@gna.org>
+
+	* src/ExtensionManager.cc:
+	Add a test in load_path.
+
+2008-11-07  kitone  <kitone@gna.org>
+
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/SubStationAlpha.h:
+	Add line break policy option: soft, hard, intelligent.
+
+2008-11-07  kitone  <kitone@gna.org>
+
+	* src/Config.cc:
+	* src/Config.h:
+	Add value comment to set_value_* functions.
+
+2008-11-06  kitone  <kitone@gna.org>
+
+	* plugins/actions/videoplayermanagement/VideoPlayerManagement.cc:
+	* plugins/actions/wavefrommanagement/WaveformManagement.cc:
+	Remove menu Video and Waveform already create in MenuBar.
+
+2008-11-06  kitone  <kitone@gna.org>
+
+	* plugins/actions/dialoguize/Dialoguize.cc:
+	* plugins/actions/italicize/Italicize.cc:
+	* share/menubar.xml:
+	Create placeholder 'text-formatting' for Italicize and Dialoguize.
+
+2008-11-06  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Add plugins directory.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Fix PACKAGE_PLUGIN_DIR.
+
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* plugins/actions/errorchecking/ErrorCheckingPreferences.h:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/findandreplace/FindAndReplace.cc:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/movesubtitles/MoveSubtitles.cc:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/scalesubtitles/ScaleSubtitles.cc:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/spellchecking/SpellChecking.cc:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitdocument/SplitDocument.cc:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/styleeditor/StyleEditor.cc:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/viewmanager/ViewManager.cc:
+	* share/glade/Makefile.am:
+	* share/glade/dialog-configure-keyboard-shortcuts.glade:
+	* share/glade/dialog-error-checking-preferences.glade:
+	* share/glade/dialog-error-checking.glade:
+	* share/glade/dialog-find-and-replace.glade:
+	* share/glade/dialog-move-subtitles.glade:
+	* share/glade/dialog-preferences.glade:
+	* share/glade/dialog-scale-subtitles.glade:
+	* share/glade/dialog-spell-checking.glade:
+	* share/glade/dialog-split-document.glade:
+	* share/glade/dialog-style-editor.glade:
+	* share/glade/dialog-view-manager.glade:
+	Move the glade files in the plugins directory if need.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* plugins/actions/changeframerate/ChangeFramerate.cc:
+	* plugins/actions/changeframerate/Makefile.am:
+	* share/glade/Makefile.am:
+	* share/glade/dialog-change-framerate.glade:
+	Move dialog-change-framerate.glade in the plugin directory.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* src/utility.h:
+	Add function get_widget_derived(path, file, name)
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-style-editor.glade:
+	Fix: bug #12569
+	Allow Opacity selection for Secondary, Outline and Shadow for ASS.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* src/formats/AdvancedSubStationAlpha.h:
+	Fix: bug #12566
+	Alpha channel support for ASS. (patch by Khalahan)
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* plugins/actions/preferences/ExtensionPage.h:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* share/glade/dialog-preferences.glade:
+	Add Extension Manager in the preferences.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gui/TreeViewExtensionManager.cc:
+	* src/gui/TreeViewExtensionManager.h:
+	New files.
+
+2008-11-05  kitone  <kitone@gna.org>
+
+	* src/ExtensionInfo.cc:
+	* src/ExtensionInfo.h:
+	Add get_authors function.
+
+2008-11-04  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	* src/Makefile.am:
+	* src/we/WaveformRenderer.cc:
+	* src/we/WaveformRenderer.h:
+	Clean dependence in the Makefile.
+
+2008-11-04  kitone  <kitone@gna.org>
+
+	* autogen.sh:
+	Add AC_PROG_LIBTOOL check.
+
+	* configure.in:
+	Add missing file plugins/Makefile.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Fix: removed PACKAGE_SHARE_DIR.
+
+	* share/menubar.xml:
+	Update with new system.
+
+	* src/gui/MenuBar.cc:
+	Add extension menu (Exts).
+
+	* plugins/actions/about/About.cc:
+	* plugins/actions/adjusttime/AdjustTime.cc:
+	* plugins/actions/applytranslation/ApplyTranslation.cc:
+	* plugins/actions/changeframerate/ChangeFramerate.cc:
+	* plugins/actions/combinesubtitles/CombineSubtitles.cc:
+	* plugins/actions/command/Command.cc:
+	* plugins/actions/configurekeyboardshortcuts/ConfigureKeyboardShortcuts.cc:
+	* plugins/actions/dialoguize/Dialoguize.cc:
+	* plugins/actions/documentmanagement/DocumentManagement.cc:
+	* plugins/actions/duplicatesubtitle/DuplicateSubtitle.cc:
+	* plugins/actions/editcell/EditCell.cc:
+	* plugins/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* plugins/actions/extendlength/ExtendLength.cc:
+	* plugins/actions/externalvideoplayer/ExternalVideoPlayer.cc:
+	* plugins/actions/findandreplace/FindAndReplace.cc:
+	* plugins/actions/insertsubtitle/InsertSubtitle.cc:
+	* plugins/actions/italicize/Italicize.cc:
+	* plugins/actions/joindocument/JoinDocument.cc:
+	* plugins/actions/moveafterprecedingsubtitle/MoveAfterPrecedingSubtitle.cc:
+	* plugins/actions/movesubtitles/MoveSubtitles.cc:
+	* plugins/actions/plaintext/PlainText.cc:
+	* plugins/actions/preferences/PreferencesPlugin.cc:
+	* plugins/actions/removesubtitle/RemoveSubtitle.cc:
+	* plugins/actions/reversetextandtranslation/ReverseTextAndTranslation.cc:
+	* plugins/actions/scalesubtitles/ScaleSubtitles.cc:
+	* plugins/actions/selection/Selection.cc:
+	* plugins/actions/spellchecking/SpellChecking.cc:
+	* plugins/actions/splitdocument/SplitDocument.cc:
+	* plugins/actions/splitsubtitle/SplitSubtitle.cc:
+	* plugins/actions/styleeditor/StyleEditor.cc:
+	* plugins/actions/timemodemanagement/TimeModeManagement.cc:
+	* plugins/actions/videoplayermanagement/VideoPlayerManagement.cc:
+	* plugins/actions/viewmanager/ViewManager.cc:
+	* plugins/actions/wavefrommanagement/WaveformManagement.cc:
+	Update to use the new extension system.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* plugins/actions/Makefile.am:
+	* plugins/actions/about/Makefile.am:
+	* plugins/actions/about/about.se-plugin.desktop.in:
+	* plugins/actions/adjusttime/Makefile.am:
+	* plugins/actions/adjusttime/adjusttime.se-plugin.desktop.in:
+	* plugins/actions/applytranslation/Makefile.am:
+	* plugins/actions/applytranslation/applytranslation.se-plugin.desktop.in:
+	* plugins/actions/changeframerate/Makefile.am:
+	* plugins/actions/changeframerate/changeframerate.se-plugin.desktop.in:
+	* plugins/actions/combinesubtitles/Makefile.am:
+	* plugins/actions/combinesubtitles/combinesubtitles.se-plugin.desktop.in:
+	* plugins/actions/command/Makefile.am:
+	* plugins/actions/command/command.se-plugin.desktop.in:
+	* plugins/actions/configurekeyboardshortcuts/Makefile.am:
+	* plugins/actions/configurekeyboardshortcuts/configurekeyboardshortcuts.se-plugin.desktop.in:
+	* plugins/actions/dialoguize/Makefile.am:
+	* plugins/actions/dialoguize/dialoguize.se-plugin.desktop.in:
+	* plugins/actions/documentmanagement/Makefile.am:
+	* plugins/actions/documentmanagement/documentmanagement.se-plugin.desktop.in:
+	* plugins/actions/duplicatesubtitle/Makefile.am:
+	* plugins/actions/duplicatesubtitle/duplicatesubtitle.se-plugin.desktop.in:
+	* plugins/actions/editcell/Makefile.am:
+	* plugins/actions/editcell/editcell.se-plugin.desktop.in:
+	* plugins/actions/errorchecking/Makefile.am:
+	* plugins/actions/errorchecking/errorchecking.se-plugin.desktop.in:
+	* plugins/actions/extendlength/Makefile.am:
+	* plugins/actions/extendlength/extendlength.se-plugin.desktop.in:
+	* plugins/actions/externalvideoplayer/Makefile.am:
+	* plugins/actions/externalvideoplayer/externalvideoplayer.se-plugin.desktop.in:
+	* plugins/actions/findandreplace/Makefile.am:
+	* plugins/actions/findandreplace/findandreplace.se-plugin.desktop.in:
+	* plugins/actions/insertsubtitle/Makefile.am:
+	* plugins/actions/insertsubtitle/insertsubtitle.se-plugin.desktop.in:
+	* plugins/actions/italicize/Makefile.am:
+	* plugins/actions/italicize/italicize.se-plugin.desktop.in:
+	* plugins/actions/joindocument/Makefile.am:
+	* plugins/actions/joindocument/joindocument.se-plugin.desktop.in:
+	* plugins/actions/moveafterprecedingsubtitle/Makefile.am:
+	* plugins/actions/moveafterprecedingsubtitle/moveafterprecedingsubtitle.se-plugin.desktop.in:
+	* plugins/actions/movesubtitles/Makefile.am:
+	* plugins/actions/movesubtitles/movesubtitles.se-plugin.desktop.in:
+	* plugins/actions/plaintext/Makefile.am:
+	* plugins/actions/plaintext/plaintext.se-plugin.desktop.in:
+	* plugins/actions/preferences/Makefile.am:
+	* plugins/actions/preferences/preferences.se-plugin.desktop.in:
+	* plugins/actions/removesubtitle/Makefile.am:
+	* plugins/actions/removesubtitle/removesubtitle.se-plugin.desktop.in:
+	* plugins/actions/reversetextandtranslation/Makefile.am:
+	* plugins/actions/reversetextandtranslation/reversetextandtranslation.se-plugin.desktop.in:
+	* plugins/actions/scalesubtitles/Makefile.am:
+	* plugins/actions/scalesubtitles/scalesubtitles.se-plugin.desktop.in:
+	* plugins/actions/selection/Makefile.am:
+	* plugins/actions/selection/selection.se-plugin.desktop.in:
+	* plugins/actions/spellchecking/Makefile.am:
+	* plugins/actions/spellchecking/spellchecking.se-plugin.desktop.in:
+	* plugins/actions/splitdocument/Makefile.am:
+	* plugins/actions/splitdocument/splitdocument.se-plugin.desktop.in:
+	* plugins/actions/splitsubtitle/Makefile.am:
+	* plugins/actions/splitsubtitle/splitsubtitle.se-plugin.desktop.in:
+	* plugins/actions/styleeditor/Makefile.am:
+	* plugins/actions/styleeditor/styleeditor.se-plugin.desktop.in:
+	* plugins/actions/timemodemanagement/Makefile.am:
+	* plugins/actions/timemodemanagement/timemodemanagement.se-plugin.desktop.in:
+	* plugins/actions/videoplayermanagement/Makefile.am:
+	* plugins/actions/videoplayermanagement/videoplayermanagement.se-plugin.desktop.in:
+	* plugins/actions/viewmanager/Makefile.am:
+	* plugins/actions/viewmanager/viewmanager.se-plugin.desktop.in:
+	* plugins/actions/wavefrommanagement/Makefile.am:
+	* plugins/actions/wavefrommanagement/waveformmanagement.se-plugin.desktop.in:
+	* src/actions/About.cc:
+	* src/actions/AdjustTime.cc:
+	* src/actions/ApplyTranslation.cc:
+	* src/actions/ChangeFramerate.cc:
+	* src/actions/CombineSubtitles.cc:
+	* src/actions/ConfigureKeyboardShortcuts.cc:
+	* src/actions/DeleteSubtitleSelect.cc:
+	* src/actions/Dialoguize.cc:
+	* src/actions/DocumentManagement.cc:
+	* src/actions/DuplicateSelectedSubtitles.cc:
+	* src/actions/EditCell.cc:
+	* src/actions/ExtendLength.cc:
+	* src/actions/ExternalVideoPlayer.cc:
+	* src/actions/FindAndReplace.cc:
+	* src/actions/InsertSubtitle.cc:
+	* src/actions/Italicize.cc:
+	* src/actions/JoinDocument.cc:
+	* src/actions/MoveAfterPrecedingSubtitle.cc:
+	* src/actions/MoveSubtitles.cc:
+	* src/actions/ReverseTextAndTranslation.cc:
+	* src/actions/ScaleSubtitles.cc:
+	* src/actions/Selection.cc:
+	* src/actions/SpellChecking.cc:
+	* src/actions/SpellChecking.h:
+	* src/actions/SplitDocument.cc:
+	* src/actions/SplitSubtitle.cc:
+	* src/actions/StyleEditor.cc:
+	* src/actions/StyleEditor.h:
+	* src/actions/TimeModeManagement.cc:
+	* src/actions/Transcript.cc:
+	* src/actions/UndoRedo.cc:
+	* src/actions/VideoPlayerManagement.cc:
+	* src/actions/ViewManager.cc:
+	* src/actions/WaveformManagement.cc:
+	* src/actions/errorchecking/ErrorChecking.h:
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/actions/errorchecking/ErrorCheckingPreferences.h:
+	* src/actions/errorchecking/MaxCharactersPerLine.h:
+	* src/actions/errorchecking/MaxLinePerSubtitle.h:
+	* src/actions/errorchecking/MinDisplayTime.h:
+	* src/actions/errorchecking/MinGapBetweenSubtitles.h:
+	* src/actions/errorchecking/Overlapping.h:
+	* src/actions/errorchecking/TooLongDisplayTime.h:
+	* src/actions/errorchecking/TooShortDisplayTime.h:
+	* src/actions/preferences/DocumentPage.h:
+	* src/actions/preferences/InterfacePage.h:
+	* src/actions/preferences/PreferencePage.h:
+	* src/actions/preferences/PreferencesPlugin.cc:
+	* src/actions/preferences/PreviewPage.h:
+	* src/actions/preferences/TimingPage.h:
+	* src/actions/preferences/VideoPlayerPage.h:
+	* src/actions/preferences/WaveformPage.h:
+	New files and move src/actions in plugins/actions/(name).
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	Small fixes.
+
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	Remove PluginSystem code and replace by ExtensionManager.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	Small fixes.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	Replace menuitem by placeholder.
+
+	* src/gui/MenuBar.cc:
+	Add menus Selection, Video and Waveform.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* Makefile.am:
+	* configure.in:
+	* plugins/Makefile.am:
+	* plugins/actions/Makefile.am:
+	New directory for plugins.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Splitting of subtitleeditor with libsubtitleeditor.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	libtoolize subtitleeditor.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/extension/Action.cc:
+	* src/extension/Action.h:
+	New file, Action extension.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	New value PACKAGE_PLUGIN_DIR.
+
+	* src/Extension.cc:
+	* src/Extension.h:
+	* src/ExtensionInfo.cc:
+	* src/ExtensionInfo.h:
+	* src/ExtensionManager.cc:
+	* src/ExtensionManager.h:
+	* src/Makefile.am:
+	New files, introduce a new extension system.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-11-02  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.26.0 release.
+
+2008-11-02  kitone  <kitone@gna.org>
+
+	* src/FileWriter.h:
+	* src/Subtitle.cc:
+	Fix: bug #12542 (https://gna.org/bugs/?12542)
+	Unable to build Subtitleeditor 0.25.0
+
+2008-10-30  kitone  <kitone@gna.org>
+
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/SubStationAlpha.h:
+	Fix: ASS/SSA newline (patch by Robert Ramiega)
+
+2008-10-29  kitone  <kitone@gna.org>
+
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/SubStationAlpha.h:
+	Add a default style if the document doesn't 
+	at least one when the file is saved.
+
+2008-10-28  kitone  <kitone@gna.org>
+
+	* src/formats/MicroDVD.h:
+	Fix: MicrDVD to SE tags conversion.
+
+2008-10-27  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+2008-10-27  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* src/Makefile.am:
+	Remove pcre dependance.
+
+	* src/actions/FindAndReplace.cc:
+	Using GRegex instead of pcre.
+
+2008-10-27  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+2008-10-27  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Remove pcrecpp dependance.
+
+	* src/Makefile.am:
+	Remove RegEx* and testRegEx.cc files.
+	
+	* src/RegEx.cc:
+	* src/RegEx.h:
+	* src/unittest/testRegEx.cc:
+	Remove files.
+
+2008-10-27  kitone  <kitone@gna.org>
+
+	* src/actions/FindAndReplace.cc:
+	Remove RegEx. (hack)
+
+2008-10-26  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Remove unused header RegEx.h.
+
+2008-10-24  kitone  <kitone@gna.org>
+
+	* src/actions/CombineSubtitles.cc:
+	Remove unused header RegEx.h.
+
+	* src/actions/SplitSubtitle.cc:
+	Using Glib::Regex instead of RegEx.
+
+2008-10-24  kitone  <kitone@gna.org>
+
+	* src/actions/Dialoguize.cc:
+	* src/actions/Italicize.cc:
+	Using Glib::Regex instead of RegEx.
+
+2008-10-24  kitone  <kitone@gna.org>
+
+	* src/gui/ComboBoxVideo.cc:
+	Using Glib::Regex instead of RegEx.
+
+	* src/gui/DialogFileChooser.cc:
+	Remove unused header RegEx.h.
+
+2008-10-23  kitone  <kitone@gna.org>
+
+	* src/formats/AdobeEncoreDVD.h:
+	Using Glib::Regex instead of RegEx.
+	Fix: multiple line reader.
+
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/MPL2.h:
+	* src/formats/MPsub.h:
+	* src/formats/MicroDVD.h:
+	* src/formats/SubRip.h:
+	* src/formats/SubStationAlpha.h:
+	* src/formats/SubViewer2.h:
+	Using Glib::Regex instead of RegEx.
+
+2008-10-16  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	Fix: change async to sync spawn_command.
+
+2008-10-13  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-10-13  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.25.0 release.
+
+2008-10-13  kitone  <kitone@gna.org>
+
+	* src/SubtitleFormat.cc:
+	* src/formats/SubtitleEditorProject.h:
+	* src/formats/TimedTextAuthoringFormat1.h:
+	Spelling fixes by Luboš Staněk.
+
+2008-10-12  kitone  <kitone@gna.org>
+
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	Fix: Error Checking fix with command recorder.
+	Fix: active list (By Subtitles).
+
+2008-10-08  kitone  <kitone@gna.org>
+
+	* src/formats/MicroDVD.h:
+	Restore tag conversion.
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Comment the line set_show_not_found. (freeze the ui)
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	Fix column title and alignment.
+	Clean code.
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Change add_filter to set_filter. (Recent code)
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/SubtitleFormatSystem.cc:
+	* src/formats/TimedText.h:
+	* src/formats/TimedTextAuthoringFormat1.h:
+	Rename TimedText to TimedTextAuthoringFormat1.
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/Options.cc:
+	* src/Options.h:
+	* src/debug.cc:
+	* src/debug.h:
+	* src/main.cc:
+	Add option --enable-profiling.
+
+2008-10-07  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Remove deprecated function.
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-error-checking-preferences.glade:
+	* share/glade/dialog-preferences.glade:
+	Fix: min timing value.
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* src/Subtitle.cc:
+	* src/actions/errorchecking/TooLongDisplayTime.h:
+	* src/actions/errorchecking/TooShortDisplayTime.h:
+	* src/utility.cc:
+	* src/utility.h:
+	Improve the precision to the number of characters per second.
+	(patch by spirit)
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	Align at right the columns num, cps and cpl. (patch by spirit).
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* src/FileReader.cc:
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/MPsub.h:
+	* src/formats/SubStationAlpha.h:
+	Add debug msg.
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* src/Subtitle.cc:
+	* src/utility.cc:
+	* src/utility.h:
+	Rename function get_num_characters to get_characters_per_line.
+
+2008-10-05  kitone  <kitone@gna.org>
+
+	* src/FileWriter.cc:
+	Improve the newline conversion by using Regex.
+
+2008-10-05  kitone  <kitone@gna.org>
+
+	* src/FileWriter.cc:
+	Fix: conversion error.
+
+2008-10-05  kitone  <kitone@gna.org>
+
+	* src/FileReader.cc:
+	* src/FileReader.h:
+	Create lines only if needs.
+
+2008-10-05  kitone  <kitone@gna.org>
+
+	* src/FileReader.cc:
+	* src/FileReader.h:
+	Add option max_data_size.
+
+	* src/SubtitleFormatSystem.cc:
+	* src/SubtitleFormatSystem.h:
+	Determine the format with only a small content.
+
+2008-10-05  kitone  <kitone@gna.org>
+
+	* src/gui/Application.cc:
+	Split filename (tooltip) with Name and Path.
+	Update UI when files are open.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/FileWriter.cc:
+	Add newline conversion.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/FileReader.cc:
+	Fix: default newline value.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/SubtitleFormatSystem.cc:
+	* src/formats/AdobeEncoreDVD.h:
+	* src/formats/AdvancedSubStationAlpha.h:
+	* src/formats/MPL2.h:
+	* src/formats/MPsub.h:
+	* src/formats/MicroDVD.h:
+	* src/formats/SubRip.h:
+	* src/formats/SubStationAlpha.h:
+	* src/formats/SubViewer2.h:
+	* src/formats/SubtitleEditorProject.h:
+	* src/formats/TimedText.h:
+	New files. Append formats.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/gui/ComboBoxNewLine.cc:
+	Add "Macintosh" newline.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	* src/gui/ComboBoxSubtitleFormat.cc:
+	* src/gui/DialogFileChooser.cc:
+	Restore with SubtitleFormatSystem.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/SubtitleFormat.cc:
+	* src/SubtitleFormat.h:
+	* src/SubtitleFormatFactory.h:
+	* src/SubtitleFormatSystem.cc:
+	* src/SubtitleFormatSystem.h:
+	New files.
+	New Subtitle Format System.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/ScriptInfo.cc:
+	* src/ScriptInfo.h:
+	Remove values for std::map<Glib::ustring, Glib::ustring>.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/actions/Transcript.cc:
+	Restore Import/Export with the support of FileReader/Writer.
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/Options.cc:
+	* src/Options.h:
+	* src/debug.h:
+	* src/main.cc:
+	Remove SE_DEBUG_LOADER and SE_DEBUG_SAVER.
+	Add SE_DEBUG_IO. (Input Output)
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/FileReader.cc:
+	* src/FileReader.h:
+	* src/FileWriter.cc:
+	* src/FileWriter.h:
+	* src/Makefile.am:
+	Help to Read or write file.
+	New files. 
+
+2008-10-04  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	* src/actions/Transcript.cc:
+	* src/gui/ComboBoxSubtitleFormat.cc:
+	* src/gui/DialogFileChooser.cc:
+	Remove SubtitleSystem code. (SE is broken)
+
+	* src/Makefile.am:
+	Update with files removed.
+
+	* src/SubtitleFormat.cc:
+	* src/SubtitleFormat.h:
+	* src/SubtitleSystem.cc:
+	* src/SubtitleSystem.h:
+	* src/formats/SubtitleASS.cc:
+	* src/formats/SubtitleASS.h:
+	* src/formats/SubtitleEditorProject.cc:
+	* src/formats/SubtitleEditorProject.h:
+	* src/formats/SubtitleEncoreNTSC.cc:
+	* src/formats/SubtitleEncoreNTSC.h:
+	* src/formats/SubtitleEncorePAL.cc:
+	* src/formats/SubtitleEncorePAL.h:
+	* src/formats/SubtitleMPL2.cc:
+	* src/formats/SubtitleMPL2.h:
+	* src/formats/SubtitleMPsub.cc:
+	* src/formats/SubtitleMPsub.h:
+	* src/formats/SubtitleMicroDVD.cc:
+	* src/formats/SubtitleMicroDVD.h:
+	* src/formats/SubtitleSSA.cc:
+	* src/formats/SubtitleSSA.h:
+	* src/formats/SubtitleSubRip.cc:
+	* src/formats/SubtitleSubRip.h:
+	* src/formats/SubtitleSubViewer2.cc:
+	* src/formats/SubtitleSubViewer2.h:
+	* src/formats/SubtitleTTXT.cc:
+	* src/formats/SubtitleTTXT.h:
+	* src/formats/SubtitleText.cc:
+	* src/formats/SubtitleText.h:
+	* src/formats/SubtitleTimedText.cc:
+	* src/formats/SubtitleTimedText.h:
+	* src/unittest/testSubtitleLoaders.cc:
+	Remove files.
+
+2008-10-03  kitone  <kitone@gna.org>
+
+	* src/actions/ExternalVideoPlayer.cc:
+	Remove file extension of the preview.
+
+2008-10-03  kitone  <kitone@gna.org>
+
+	* src/TimeUtility.cc:
+	* src/TimeUtility.h:
+	Add function get_framerate_from_value.
+
+2008-10-03  kitone  <kitone@gna.org>
+
+	* src/gui/DialogFileChooser.h:
+	* src/gui/DialogUtility.cc:
+	Remove header unused.
+
+2008-09-29  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Remove find_and_replace function.
+
+	* src/SubtitleFormat.cc:
+	* src/actions/ConfigureKeyboardShortcuts.cc:
+	* src/actions/ExternalVideoPlayer.cc:
+	Use utility::replace function.
+
+
+2008-09-29  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Add function replace (utility namespace).
+
+2008-09-29  kitone  <kitone@gna.org>
+
+	* src/Encodings.cc:
+	* src/Encodings.h:
+	Add function convert_from_utf8_to_charset.
+
+2008-09-28  kitone  <kitone@gna.org>
+
+	* src/gui/ComboBoxEncoding.cc:
+	Fix: set_value doesn't work.
+
+2008-09-26  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	Fix: missing file PreferencePage.h.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* src/utility.h:
+	Fix: debug msg (from_string).
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* src/Encodings.cc:
+	* src/Encodings.h:
+	Add functions convert_to_utf8_from_charset and convert_to_utf8.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.24.1 release.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* src/formats/SubtitleSubRip.cc:
+	Fix: newline at opening (Unix) patch by spirit.
+	
+	* src/utility.cc:
+	* src/utility.h:
+	Remove trim_right function patch by spirit.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* src/actions/preferences/VideoPlayerPage.h:
+	Fix: ComboBox output bug (translation).
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* prepare-po.sh:
+	Add option [encoding: UTF-8].
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* src/Subtitle.cc:
+	* src/utility.cc:
+	* src/utility.h:
+	Fix #12347 : Wrong line length and characters per second. 
+	patch by John D. (spirit)
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* src/GtkUtility.cc:
+	* src/GtkUtility.h:
+	* src/gui/SpinButtonTime.cc:
+	* src/gui/SpinButtonTime.h:
+	* src/Makefile.am:
+	Move GtkUtility code to gui/SpinButtonTime.
+	
+	* src/actions/MoveSubtitles.cc:
+	* src/actions/ScaleSubtitles.cc:
+	Update include SpinButtonTime.
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/gui/Application.cc:
+	* src/gui/MenuBar.cc:
+	* src/gui/MenuBar.h:
+	Remove deprecated code. Cleanup code.
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* src/actions/preferences/DocumentPage.h:
+	* src/actions/preferences/InterfacePage.h:
+	* src/actions/preferences/PreferencePage.h:
+	* src/actions/preferences/PreferencesPlugin.cc:
+	* src/actions/preferences/PreviewPage.h:
+	* src/actions/preferences/TimingPage.h:
+	* src/actions/preferences/VideoPlayerPage.h:
+	* src/actions/preferences/WaveformPage.h:
+	New files.
+
+	* share/glade/dialog-preferences.glade:
+	* src/Makefile.am:
+	* src/gui/MenuBar.cc:
+	* src/gui/MenuBar.h:
+	Move dialog Preferences code to src/actions/preferences/* as plugin.
+	Remove deprecated code. 
+
+	* src/gui/PreferencesUI.cc:
+	* src/gui/PreferencesUI.h:
+	Delete files.
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* src/gui/MenuBar.cc:
+	* src/main.cc:
+	Remove deprecated code.
+
+2008-09-23  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-09-21  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.24.0 release.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/actions/errorchecking/MaxCharactersPerLine.h:
+	* src/actions/errorchecking/MaxLinePerSubtitle.h:
+	* src/actions/errorchecking/MinDisplayTime.h:
+	* src/actions/errorchecking/MinGapBetweenSubtitles.h:
+	* src/actions/errorchecking/Overlapping.h:
+	* src/actions/errorchecking/TooLongDisplayTime.h:
+	* src/actions/errorchecking/TooShortDisplayTime.h:
+	Fix: bold messages by Luboš Staněk.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	TimeCell derived to TextView widget.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/actions/errorchecking/ErrorCheckingPreferences.h:
+	Fix: dialog parent.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/actions/errorchecking/MaxCharactersPerLine.h:
+	* src/actions/errorchecking/MaxLinePerSubtitle.h:
+	* src/actions/errorchecking/MinGapBetweenSubtitles.h:
+	* src/actions/errorchecking/TooLongDisplayTime.h:
+	* src/actions/errorchecking/TooShortDisplayTime.h:
+	Fix: plurals messages (patch by Luboš Staněk)
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-configure-keyboard-shortcuts.glade:
+	* share/glade/dialog-error-checking-preferences.glade:
+	Fix gtk-* string.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	Fix the scroll of widget time (cell) as SpinButtonTime.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	Fix typo.
+
+	* src/actions/errorchecking/Overlapping.h:
+	Fix typo. (bold)
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* share/glade/Makefile.am:
+	Fix: missing files dialog-error-checking.glade and
+	dialog-error-checking-preferences.glade.
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-error-checking-preferences.glade:
+	* share/glade/dialog-error-checking.glade:
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/errorchecking/ErrorChecking.h:
+	* src/actions/errorchecking/ErrorCheckingPlugin.cc:
+	* src/actions/errorchecking/ErrorCheckingPreferences.h:
+	* src/actions/errorchecking/MaxCharactersPerLine.h:
+	* src/actions/errorchecking/MaxLinePerSubtitle.h:
+	* src/actions/errorchecking/MinDisplayTime.h:
+	* src/actions/errorchecking/MinGapBetweenSubtitles.h:
+	* src/actions/errorchecking/Overlapping.h:
+	* src/actions/errorchecking/TooLongDisplayTime.h:
+	* src/actions/errorchecking/TooShortDisplayTime.h:
+	Introduce new Error Checking tool.
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* src/Action.cc:
+	* src/Action.h:
+	* src/ActionSystem.cc:
+	* src/ActionSystem.h:
+	Delete files.
+
+	* src/Makefile.am:
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	* src/actions/StyleEditor.h:
+	* src/gui/MenuBar.cc:
+	* src/gui/MenuBar.h:
+	Remove deprecated code. (Action, ActionSystem)
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* src/gui/MenuBar.cc:
+	* src/gui/MenuBar.h:
+	* src/actions/ConfigureKeyboardShortcuts.cc:
+	Move Configure Keyboard Shortcuts code to ConfigureKeyboardShortcuts.cc file.
+
+	* src/Makefile.am:
+	Add new file ConfigureKeyboardShortcuts.cc
+
+	* share/glade/dialog-configure-keyboard-shortcuts.glade:
+	Small fix.
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* src/gui/MenuBar.cc:
+	Remove Check Errors tool. (missing)
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* share/glade/Makefile.am:
+	* share/glade/dialog-check-errors-preferences.glade:
+	* share/glade/dialog-check-errors.glade:
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/CheckErrors.cc:
+	* src/actions/CheckErrors.h:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	* src/gui/CheckErrorsUI.cc:
+	* src/gui/CheckErrorsUI.h:
+	Remove Check Errors tool.
+
+2008-09-19  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Remove previous commit by using Gtk::RecentAction.
+
+2008-09-11  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Do not call directly create_menu_recent_files. 
+	Because it freeze a moment the interface.
+
+2008-09-06  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* src/gui/PreferencesUI.cc:
+	Add options to set default values to document. (Fix #12285)
+
+2008-09-06  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	Add support of ComboBoxText to WidgetToConfig.
+
+2008-09-06  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/gui/ComboBoxNewLine.cc:
+	* src/gui/ComboBoxNewLine.h:
+	* src/gui/ComboBoxSubtitleFormat.cc:
+	* src/gui/ComboBoxSubtitleFormat.h:
+	* src/gui/ComboBoxVideo.cc:
+	* src/gui/ComboBoxVideo.h:
+	* src/gui/DialogFileChooser.cc:
+	Remove ComboBox* code from DialogFileChooser.cc to ComboBox* files.
+
+2008-09-06  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	Check the config for the values of 'newline' and 'format'.
+
+	* src/main.cc:
+	Add default config values for the group 'document'.
+	Values 'format' and 'newline'.
+
+2008-09-06  kitone  <kitone@gna.org>
+
+	* src/SubtitleSystem.cc:
+	* src/SubtitleSystem.h:
+	Add function 'is_supported' and debug msg.
+
+2008-09-05  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+	* src/actions/DocumentManagement.cc:
+	Remove comment code.
+
+2008-09-04  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.23.0 release.
+
+2008-09-04  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	Remove auto-save code from Application.cc to DocumentManagement.cc.
+
+2008-09-01  kitone  <kitone@gna.org>
+
+	* src/we/WaveformRendererCairo.cc:
+	Used Pango to display text.
+
+2008-08-31  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Patch by Luboš Staněk to blacklist glibmm version.
+	Versions 2.16.0, 2.16.1 and 2.16.2.
+
+2008-08-31  kitone  <kitone@gna.org>
+
+	* src/gui/PreferencesUI.cc:
+	* src/main.cc:
+	Fix: "display-subtitle-text" group.
+
+2008-08-30  kitone  <kitone@gna.org>
+
+	* src/gui/Application.cc:
+	Add "Timing Mode" to the tooltip.
+
+2008-08-30  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	* src/SubtitleFormat.cc:
+	Throw EncodingConvertError when utf8_to_charset failed.
+
+2008-08-28  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	* src/gui/ComboBoxEncoding.cc:
+	* src/gui/ComboBoxEncoding.h:
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/DialogFileChooser.h:
+	Improve the save dialog by selecting default values from document.
+
+2008-08-27  kitone  <kitone@gna.org>
+
+	* src/Error.h:
+	New files for subtitle errors.
+
+	* src/Document.cc:
+	Better support of errors and messages.
+
+	* src/SubtitleFormat.cc:
+	* src/SubtitleFormat.h:
+	Remove the class SubtitleException. 
+	Used the news errors (Error.h).
+
+	* src/actions/Transcript.cc:
+	Catch any errors. (needs to be fixed)
+
+	* src/SubtitleSystem.cc:
+	* src/formats/SubtitleASS.cc:
+	* src/formats/SubtitleEditorProject.cc:
+	* src/formats/SubtitleEncoreNTSC.cc:
+	* src/formats/SubtitleEncorePAL.cc:
+	* src/formats/SubtitleMPL2.cc:
+	* src/formats/SubtitleMPsub.cc:
+	* src/formats/SubtitleMicroDVD.cc:
+	* src/formats/SubtitleSSA.cc:
+	* src/formats/SubtitleSubRip.cc:
+	* src/formats/SubtitleSubViewer2.cc:
+	* src/formats/SubtitleTTXT.cc:
+	* src/formats/SubtitleText.cc:
+	* src/formats/SubtitleTimedText.cc:
+	Throw better errors. (UnrecognizeFormatError, EncodingConvertError ...)
+
+	* src/gui/DialogUtility.cc:
+	* src/gui/DialogUtility.h:
+	Add new class ErrorDialog.
+	
+	* src/Makefile.am:
+	* src/unittest/adobe.encore.dvd.ntsc.format:
+	* src/unittest/adobe.encore.dvd.ntsc.format.euc-jp:
+	* src/unittest/adobe.encore.dvd.pal.format:
+	* src/unittest/adobe.encore.dvd.pal.format.euc-jp:
+	* src/unittest/ass.format:
+	* src/unittest/ass.format.euc-jp:
+	* src/unittest/microdvd.format:
+	* src/unittest/microdvd.format.euc-jp:
+	* src/unittest/mpl2.format:
+	* src/unittest/mpl2.format.euc-jp:
+	* src/unittest/mpsub.format:
+	* src/unittest/mpsub.format.euc-jp:
+	* src/unittest/ssa.format:
+	* src/unittest/ssa.format.euc-jp:
+	* src/unittest/subrip.format:
+	* src/unittest/subrip.format.euc-jp:
+	* src/unittest/subtitle.editor.project.format:
+	* src/unittest/subtitle.editor.project.format.euc-jp:
+	* src/unittest/subviewer2.0.format:
+	* src/unittest/subviewer2.0.format.euc-jp:
+	* src/unittest/transcript:
+	New files and update the files with elephantsdream subtitles.
+
+	* src/unittest/testSubtitleLoaders.cc:
+	Test some subtitle errors.
+
+2008-08-25  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop.in:
+	Fix mime-types patch by Luboš Staněk.
+
+2008-08-25  kitone  <kitone@gna.org>
+
+	Add possibility to select the encoding when opening 
+	the subtitle if it failed.
+
+	* src/Document.cc:
+	* src/Document.h:
+	New function Document::create_from_file.
+	
+	* src/SubtitleFormat.cc:
+	Improve error.
+
+	* src/actions/DocumentManagement.cc:
+	* src/actions/JoinDocument.cc:
+	* src/gui/Application.cc:
+	Use Document::create_from_file.
+
+2008-08-25  kitone  <kitone@gna.org>
+
+	* src/Encodings.cc:
+	* src/Encodings.h:
+	Add function get_label_from_charset.
+	Remove function get_from_index.
+
+	* src/gui/ComboBoxEncoding.cc:
+	Use fonction get_label_from_charset.
+
+2008-08-21  kitone  <kitone@gna.org>
+
+	* src/gui/ComboBoxEncoding.cc:
+	* src/gui/ComboBoxEncoding.h:
+	* src/gui/DialogFileChooser.cc:
+	* src/Makefile.am:
+	Add files ComboBoxEncoding. 
+	Remove code from DialogFileChooser.cc	
+
+2008-08-20  kitone  <kitone@gna.org>
+
+	* src/gui/DialogFileChooser.cc:
+	Add "Current Locale" if encodings is empty.
+
+2008-08-20  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Add dependence of glibmm >= 2.16.3. (patch by Luboš Staněk)
+
+2008-08-19  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	RecentChooserMenu show tips.
+
+2008-08-19  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Change dependence of gtkmm >= 2.12.
+
+	* src/gui/Application.cc:
+	Remove deprecated widget (Gtk::Tooltips) and used now Gtk::Tooltip.
+
+2008-08-19  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Add default values to [waveform-renderer].
+
+2008-08-19  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/EditCell.cc:
+	Add functions "Edit Cell" and "Edit Next Cell".
+
+2008-08-19  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	Add the option "start_editing" to function "select".
+	Making the column heading as bold if it has the focus.
+
+	* src/Subtitles.cc:
+	* src/Subtitles.h:
+	Add the option "start_editing" to function "select". 
+
+2008-08-18  kitone  <kitone@gna.org>
+
+	* src/actions/ExternalVideoPlayer.cc:
+	Fix accelkey.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.22.3 release.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* src/debug.cc:
+	Add profiling to debug functions (disable by default).
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* share/glade/dialog-spell-checking.glade:
+	* share/glade/dialog-style-editor.glade:
+	* src/actions/ViewManager.cc:
+	Fix: Dialog parent.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* src/PluginSystem.cc:
+	* src/gui/Application.cc:
+	Improve the speed accessibility of the menu at launch.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-check-errors-preferences.glade:
+	* share/glade/dialog-configure-keyboard-shortcuts.glade:
+	* share/glade/dialog-preferences.glade:
+	* share/glade/dialog-style-editor.glade:
+	* src/actions/VideoPlayerManagement.cc:
+	* src/gui/CheckErrorsUI.cc:
+	Batch of spelling fixes by Luboš Staněk.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* src/DocumentSystem.cc:
+	Fix: Untitled document translatable.
+
+	* src/gui/DialogFileChooser.cc:
+	Fix: Add translation string.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* Makefile.am:
+	* autogen.sh:
+	* configure.in:
+	* prepare-po.sh:
+	* share/Makefile.am:
+	Add intltool. *.desktop file can be translated.
+	Patch by Luboš Staněk.
+
+	* share/subtitleeditor.desktop:
+	Remove file.
+
+	* share/subtitleeditor.desktop.in:
+	New file.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* acinclude.m4:
+	Adds missing files from autoconf-archive for the AX_CHECK_GL macro.
+	Patches by Luboš Staněk.
+
+2008-08-12  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.22.2 release.
+
+2008-08-11  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-find-and-replace.glade:
+	* share/glade/dialog-preferences.glade:
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/PreferencesUI.cc:
+	Fix: Spelling errors, video/audio sink translation, new translation string.
+	Patches by Luboš Staněk.
+
+2008-08-10  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.22.1 release.
+
+2008-08-10  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Add function set_transient_parent.
+
+	* src/actions/ChangeFramerate.cc:
+	* src/actions/DocumentManagement.cc:
+	* src/actions/FindAndReplace.cc:
+	* src/actions/MoveSubtitles.cc:
+	* src/actions/ScaleSubtitles.cc:
+	* src/actions/SpellChecking.cc:
+	* src/actions/SplitDocument.cc:
+	* src/actions/StyleEditor.cc:
+	* src/actions/ViewManager.cc:
+	* src/gui/DialogCharacterCodings.cc:
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/PreferencesUI.cc:
+	Fix: Dialog parent.
+
+2008-08-10  kitone  <kitone@gna.org>
+
+	* share/glade/Makefile.am:
+	Fix: dialog-character-codings.glade missing. Patch again by Luboš Staněk.
+
+2008-08-10  kitone  <kitone@gna.org>
+
+	* src/gui/DialogCharacterCodings.h:
+	* src/gui/DialogFileChooser.h:
+	Fix: Issue with gcc-4.3 and auto_ptr. Patch by Luboš Staněk.
+
+2008-08-07  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* src/actions/SpellChecking.cc:
+	* src/actions/SpellChecking.h:
+	Remove option to enable/disable enchant.
+
+2008-08-06  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Add en_GB, gl, sr, tr and de translations.
+
+2008-08-05  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.22.0 release.
+
+2008-08-05  kitone  <kitone@gna.org>
+
+	* src/formats/SubtitleMicroDVD.cc:
+	Set automatically FRAME edit mode.
+
+2008-08-05  kitone  <kitone@gna.org>
+
+	* src/Subtitles.cc:
+	Fix: crash with Subtitles::remove if the subtitle selected is the first.
+
+2008-08-01  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/GtkUtility.cc:
+	* src/GtkUtility.h:
+	New files.
+	New class "SpinButtonTime" with a support of the times and frames.
+
+	* src/utility.cc:
+	* src/utility.h:
+	Remove SpinButtonTiming code.
+
+	* share/glade/dialog-move-subtitles.glade:
+	* share/glade/dialog-scale-subtitles.glade:
+	* src/actions/MoveSubtitles.cc:
+	* src/actions/ScaleSubtitles.cc:
+	Add support of the frames.
+
+2008-08-01  kitone  <kitone@gna.org>
+
+	* src/SubtitleTime.cc:
+	* src/SubtitleTime.h:
+	Clean Code. 
+	Remove internal value for hours, minutes, seconds and msecond.  
+	Add function hours(), minutes(), seconds() and mseconds().
+
+	* src/actions/ExternalVideoPlayer.cc:
+	* src/formats/SubtitleASS.cc:
+	* src/formats/SubtitleEncoreNTSC.cc:
+	* src/formats/SubtitleEncorePAL.cc:
+	* src/formats/SubtitleSSA.cc:
+	* src/formats/SubtitleSubRip.cc:
+	* src/formats/SubtitleSubViewer2.cc:
+	* src/formats/SubtitleTimedText.cc:
+	* src/formats/SubtitleTimedTTXT.cc:
+	* src/unittest/testSubtitleTime.cc:
+	Used new SubtitleTime fonctions (hours(), ...)
+
+2008-07-25  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Make the dialog files chooser on local variable.
+	Fix segfault and gtk warning.
+
+2008-07-25  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* src/gui/Application.cc:
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/PreferencesUI.cc:
+	* src/main.cc:
+	Move option "automatically-open-video" in the group "video-player".
+	Added option "Automatically choose video to open".
+
+2008-07-24  kitone  <kitone@gna.org>
+
+	* src/actions/DocumentManagement.cc:
+	Removes the static variables of the dialogs.
+
+2008-07-24  kitone  <kitone@gna.org>
+
+	* src/gui/DialogFileChooser.cc:
+	Fix: Automatic video search only if "automatically-open-video" is enabled.
+
+2008-07-24  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* src/gui/PreferencesUI.cc:
+	Remove old Encodings interface.
+
+2008-07-24  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-character-codings.glade:
+	* src/Makefile.am:
+	Add new files. (DialogCharacterCodings & glade)
+	
+	* src/gui/DialogCharacterCodings.cc:
+	* src/gui/DialogCharacterCodings.h:
+	Add a new dialog for managing the character codings.
+
+	* src/gui/DialogFileChooser.cc:
+	Used the new dialog for managing the character codings directly 
+	from the dialog file chooser.
+
+2008-07-22  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Fix: add 'noautosub' option to mplayer command.
+
+2008-07-22  kitone  <kitone@gna.org>
+
+	* src/main.cc:
+	Fix: default value of columns-displayed.
+	Rename "columns-display" to "columns-displayed".
+
+2008-07-20  kitone  <kitone@gna.org>
+
+	* src/DocumentSystem.cc:
+	* src/DocumentSystem.h:
+	Add function create_untitled_name. (from DocumentManagement.cc)
+	
+	* src/actions/DocumentManagement.cc:
+	Remove function create_untitled_name.
+
+	* src/actions/Transcript.cc:
+	Fix: Add untitled name after the opening of the transcript.
+
+2008-07-20  kitone  <kitone@gna.org>
+
+	* src/SubtitleModel.cc:
+	Fix: default time view value.
+
+	* src/gui/DialogFileChooser.cc:
+	Fix: remove subtitle filter from DialogExportText.
+
+2008-07-20  kitone  <kitone@gna.org>
+
+	* src/Encodings.h:
+	Fix: gcc warning.
+	
+	* share/glade/Makefile.am:
+	* share/glade/dialog-export-text.glade:
+	* share/glade/dialog-import-text.glade:
+	* share/glade/dialog-open-document.glade:
+	* share/glade/dialog-save-document.glade:
+	Add new files.
+
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/DialogFileChooser.h:
+	* src/gui/DialogUtility.cc:
+	* src/gui/DialogUtility.h:
+	Improved of the dialogs file chooser (glade files), clean code.
+	Added option to open video directly with a subtitle.
+
+	* src/actions/DocumentManagement.cc:
+	Fix: #11938 (https://gna.org/bugs/?11938)
+	Used the new dialog and added the support of the automatic video search.
+
+	* src/actions/JoinDocument.cc:
+	* src/actions/Transcript.cc:
+	Used the new dialog.
+
+2008-07-08  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/Player.h:
+	* src/actions/VideoPlayerManagement.cc:
+	* src/vp/GStreamerPlayer.cc:
+	* src/vp/GStreamerPlayer.h:
+	Fix: #11938
+	Add "Close" player.
+
+2008-07-02  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	Fix: #11893 (https://gna.org/bugs/?11893)
+	Escape key canceled the change.
+	Can choose between "Enter" or "Ctrl+Enter" to confirm the change.
+
+	* share/glade/dialog-preferences.glade:
+	* src/gui/PreferencesUI.cc:
+	Add option "Used Ctrl+Enter to confirm the change"
+	
+	* src/main.cc:
+	Fix: add default renderer "cairo".
+	Add default value to "used-ctrl-enter-to-confirm-changed".
+
+2008-07-02  kitone  <kitone@gna.org>
+
+	* src/formats/SubtitleMicroDVD.cc:
+	The frame is now really supported thanks to the support of the frames.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/TimeModeManagement.cc:
+	Add new file TimeModeManagement.cc.
+	Time mode management and framerate values.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	Add support of the frame.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	* src/Document.h:
+	* src/Subtitle.cc:
+	* src/Subtitle.h:
+	Introduce frame support. 
+	Method for time and frame.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* src/SubtitleModel.cc:
+	* src/SubtitleModel.h:
+	Introduce new real values for the time. 
+	start_value, end_value, duration_value.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/TimeUtility.cc:
+	* src/TimeUtility.h:
+	Add TimeUtility files.
+	Required for added support of the frames in subtitleeditor.
+
+2008-07-01  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Add function string_to_long.
+
+2008-06-24  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-06-24  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.21.3 release.
+
+2008-06-24  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop:
+	Add MimeType.
+
+	* src/Options.cc:
+	* src/Options.h:
+	* src/gui/Application.cc:
+	Added option to open a file (-f --file).
+	There is a glibmm bug (#526831) between the version 2.15.3 and 2.16.2.
+
+2008-06-22  kitone  <kitone@gna.org>
+
+	* src/vp/VideoPlayer.cc:
+	Fix Play/Pause button.
+	Playing without taking into account subtitles.
+
+2008-06-17  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	Fix #10494 (https://gna.org/bugs/?10494). 
+	Disable actions during editing. Enable at the exit.
+
+2008-06-17  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-06-16  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.21.2 release.
+
+2008-06-16  kitone  <kitone@gna.org>
+
+	* src/formats/SubtitleASS.cc:
+	* src/formats/SubtitleMPsub.cc:
+	* src/formats/SubtitleSSA.cc:
+	Fix: Website url.
+
+2008-06-13  kitone  <kitone@gna.org>
+
+	* src/actions/DeleteSubtitleSelect.cc:
+	* src/actions/DocumentManagement.cc:
+	* src/actions/JoinDocument.cc:
+	* src/utility.h:
+	Fix: gettext plural support patch by petr pisar.
+
+2008-06-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Add Russian translation.
+
+2008-06-12  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop:
+	Fix: Add %F to Exec.
+
+2008-05-28  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/SubtitleTags.cc:
+	* src/SubtitleTags.h:
+	* src/formats/SubtitleMicroDVD.cc:
+	First work for tags support.
+
+2008-05-26  kitone  <kitone@gna.org>
+
+	* Makefile.am:
+	* configure.in:
+	* docs/Makefile.am:
+	* docs/subtitleeditor.1:
+	Add manpage.
+
+2008-05-21  kitone  <kitone@gna.org>
+
+	* share/subtitleeditor.desktop:
+	Fix Categories.
+
+2008-05-20  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-05-20  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.21.1 release.
+
+2008-05-20  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	Display an error message if check_registry failed.
+
+	* src/vp/GStreamerPlayer.cc:
+	* src/we/WaveformGenerator.cc:
+	Better error message when an gstreamer element is missing.
+
+2008-05-18  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/SubtitleSystem.cc:
+	* src/formats/SubtitleTimedText.cc:
+	* src/formats/SubtitleTimedText.h:
+	Add new format "Timed Text (TT) Authoring Format 1.0".
+
+	* src/main.cc:
+	Fix default config.
+
+	* src/utility.cc:
+	Improve gstreamer plugins missing message.
+
+2008-05-18  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* share/glade/dialog-view-manager.glade:
+	Fix: Don't translate gtk-*.
+	
+	* src/actions/ExternalVideoPlayer.cc:
+	Display a message if the  launch of the external player failed.
+
+2008-05-16  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+2008-05-14  kitone  <kitone@gna.org>
+
+	* src/gui/Application.cc:
+	Check exception with set_icon_from_file.
+	(https://gna.org/bugs/?11449)
+
+2008-05-13  kitone  <kitone@gna.org>
+
+	* src/we/WaveformRendererCairo.cc:
+	* src/we/WaveformRendererGL.cc:
+	Small fix.
+
+2008-05-12  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Switching back to development version.
+
+2008-05-11  kitone  <kitone@gna.org>
+
+	* NEWS:
+	* configure.in:
+	Preparing 0.21.0 release.
+
+2008-05-08  kitone  <kitone@gna.org>
+
+	* configure.in:
+	Add da, pt and zh_CN translations.
+
+2008-05-05  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	Add function get_column_label_by_name.
+
+	* src/actions/ViewManager.cc:
+	Uses the label of the column rather than the internal name.
+
+2008-05-04  kitone  <kitone@gna.org>
+
+	* configure.in:
+	* src/main.cc:
+	* src/we/WaveformEditor.cc:
+	* src/we/WaveformRendererGL.cc:
+	OpenGL support can be enabled or disabled with configure --enable-gl and
+	--disable-gl. It's disable by default.
+
+2008-04-30  kitone  <kitone@gna.org>
+
+	* src/gui/WaveformGeneratorUI.cc:
+	* src/gui/WaveformGeneratorUI.h:
+	Remove files.
+
+2008-04-30  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/we/WaveformGenerator.cc:
+	* src/we/WaveformGenerator.h:
+	Add new files for WaveformGenerator. 
+	Removes old files (src/gui/WaveformGeneratorUI.h/cc).
+
+	* src/actions/WaveformManagement.cc:
+	Update with the new WaveformGenerator, add save waveform code.
+
+	* src/utility.cc:
+	* src/utility.h:
+	Add function check_registry (gstreamer).
+
+2008-04-25  kitone  <kitone@gna.org>
+
+	* src/we/WaveformEditor.cc:
+	* src/we/WaveformEditor.h:
+	Add function redraw_renderer.
+
+2008-04-16  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	* src/gui/PreferencesUI.cc:
+	Update with the new WaveformRenderer.
+
+	* src/we/WaveformRenderer.cc:
+	* src/we/WaveformRenderer.h:
+	* src/we/WaveformRendererCairo.cc:
+	* src/we/WaveformRendererGL.cc:
+	Add force_redraw_all.
+
+2008-04-16  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	* src/actions/WaveformRendererCairo.cc:
+	* src/actions/WaveformRendererGL.cc:
+	Move the files to src/we/
+
+	* src/Makefile.am:
+	* src/SubtitleEditorWindow.h:
+	* src/actions/WaveformManagement.cc:
+	* src/gui/Application.h:
+	Update with new locations.
+
+2008-04-15  kitone  <kitone@gna.org>
+
+	* src/gui/GStreamerPlayer.cc:
+	* src/gui/GStreamerPlayer.h:
+	* src/gui/MPlayer.cc:
+	* src/gui/MPlayer.h:
+	* src/gui/MenuBar.cc:
+	* src/gui/Player.cc:
+	* src/gui/Player.h:
+	* src/gui/VideoPlayer.cc:
+	* src/gui/VideoPlayer.h:
+	Remove files.
+
+	* configure.in:
+	Add link to lgstpbutils-0.10.
+
+	* share/glade/subtitleeditor.glade:
+	Updated with the new VideoPlayer and WaveformEditor.
+
+	* share/menubar.xml:
+	Updated with the new video player.
+
+	* src/Makefile.am:
+	* src/Player.h:
+	* src/SubtitleEditorWindow.h:
+	* src/actions/VideoPlayerManagement.cc:
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	* src/actions/WaveformManagement.cc:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	* src/main.cc:
+	* src/utility.cc:
+	* src/utility.h:
+	* src/vp/GStreamerPlayer.cc:
+	* src/vp/GStreamerPlayer.h:
+	* src/vp/VideoPlayer.cc:
+	* src/vp/VideoPlayer.h:
+	New files, new video player.
+
+2008-04-15  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	* src/actions/StyleEditor.h:
+	* src/gui/GStreamerPlayer.cc:
+	* src/gui/WaveformGeneratorUI.cc:
+	Fix #1975 (https://gna.org/support/?1975) Build fails with gcc 4.3
+	Patch by Jacek Roszkowski.
+
+2008-04-15  kitone  <kitone@gna.org>
+
+	* src/Style.cc:
+	Fix segfault at the opening of a ASS/SSA file create by subtitleeditor.
+	Because the style doesn't save the value "encoding".
+
+	* src/Makefile.am:
+	* src/unittest/adobe.encore.dvd.ntsc.format:
+	* src/unittest/adobe.encore.dvd.pal.format:
+	* src/unittest/mpsub.format:
+	Adding files for unit test.
+
+2008-04-08  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRendererCairo.cc:
+	* src/actions/WaveformRendererGL.cc:
+	Fix: display only if the area width is superior to 20 and the height to 10.
+
+2008-04-04  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	* src/actions/WaveformRendererCairo.cc:
+	* src/actions/WaveformRendererGL.cc:
+	Fix waveform/scrollbar configure event.
+	Fix debug waveform.
+
+2008-04-03  kitone  <kitone@gna.org>
+
+	* src/gui/DialogFileChooser.cc:
+	Add audio filter.
+
+2008-03-25  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	Small fix, init and redisplay after open_wf.
+
+2008-03-22  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRendererGL.cc:
+	Fixed when the waveform has changed, the display list need to be update.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	Add check config and load config.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	Connected to the configuration.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRenderer.cc:
+	Cleanup.
+
+	* src/actions/WaveformRendererCairo.cc:
+	Fix segfault when the renderer doesn't have a waveform.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	Add cairo renderer.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	* src/actions/WaveformRendererGL.cc:
+	Move some properties in WaveformRenderer like the colors, display.
+
+	* src/Makefile.am:
+	* src/actions/WaveformRendererCairo.cc:
+	Add a new waveform renderer using Cairo.
+
+2008-03-19  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	* src/actions/WaveformRendererGL.cc:
+	The renderer has now a function for return the widget.
+	Remove the virtual function on_expose_event in WaveformRenderer.
+
+2008-03-18  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/actions/WaveformEditor.cc:
+	Improved to the choice of the renderer.
+	It can be modified dynamically.
+
+2008-03-18  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	Redisplay when the document has changed.
+
+2008-03-18  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	The signal "configure" is now connected on the waveform frame.
+	Now, it doesn't interfere with the renderer.
+
+2008-03-18  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	Add virtual function waveform_changed.
+
+2008-03-18  kitone  <kitone@gna.org>
+
+	* src/utility.cc:
+	* src/utility.h:
+	Add new split function (usplit) with a best support of Glib::ustring.
+
+2008-03-17  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRendererGL.cc:
+	Cleanup.
+
+2008-03-17  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/actions/DocumentManagement.cc:
+	Add new action "Save All".
+
+2008-03-15  kitone  <kitone@gna.org>
+
+	* src/actions/WaveformRendererGL.cc:
+	* src/main.cc:
+	Displayed a message when window system doesn't support OpenGL.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformRendererGL.cc:
+	* src/main.cc:
+	Add waveform renderer using OpenGL.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* acinclude.m4:
+	* configure.in:
+	* src/Makefile.am:
+	Add dependences: OpenGL, gtkglextmm-1.2
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/WaveformEditor.cc:
+	* src/actions/WaveformEditor.h:
+	* src/actions/WaveformManagement.cc:
+	* src/actions/WaveformRenderer.cc:
+	* src/actions/WaveformRenderer.h:
+	Add the new Waveform Editor.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* src/gui/MenuBar.cc:
+	Remove Waveform actions.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* src/gui/DialogFileChooser.cc:
+	* src/gui/DialogFileChooser.h:
+	Rename OpenWaveformUI by DialogOpenWaveform
+	and move in DialogFileChosser.
+
+	* src/Makefile.am:
+	* src/gui/OpenWaveformUI.cc:
+	* src/gui/OpenWaveformUI.h:
+	Remove files.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* src/Waveform.cc:
+	* src/Waveform.h:
+	Add static function 'create_from_file'.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* src/SubtitleEditorWindow.h:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	Preparing the new multimedia system for the 
+	futur player and the waveform editor.
+
+2008-03-13  kitone  <kitone@gna.org>
+
+	* share/glade/subtitleeditor.glade:
+	* src/Makefile.am:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	* src/gui/WaveformSystem.cc:
+	* src/gui/WaveformSystem.h:
+	Remove WaveformSystem.
+
+2008-03-01  kitone  <kitone@gna.org>
+
+	* src/Document.cc:
+	Small fix (finish_command)
+
+2008-02-13  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+2008-02-12  kitone  <kitone@gna.org>
+
+	* src/actions/ViewManager.cc:
+	Small improvements in View Manager like sensitive.
+
+2008-02-12  kitone  <kitone@gna.org>
+
+	* src/Makefile.am:
+	* src/actions/ViewModes.cc:
+	Rename ViewModes.cc by ViewManager.cc
+
+2008-02-12  kitone  <kitone@gna.org>
+
+	* share/glade/Makefile.am:
+	* share/glade/dialog-view-manager.glade:
+	Add glade file.
+
+	* share/menubar.xml:
+	Rename "setting-view-placeholder" by "view-manager-placeholder".
+
+	* src/SubtitleView.cc:
+	Rename "columns" by "columns-displayed".
+
+	* src/actions/ViewModes.cc:
+	Add "View Manager" interface for settings.
+	Rename ViewModesPlugin by ViewManagerPlugin.
+	Rename "setting-view" by "view-manager".
+	Rename "columns" by "columns-displayed"
+
+	* src/main.cc:
+	Remove: "columns", "show-column-*".
+	Add: "columns-list", "columns-displayed".
+
+2008-02-11  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	Make scrollable.
+
+2008-02-11  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/Makefile.am:
+	* src/actions/ViewModes.cc:
+	Adding a new view modes in the form of a plugin (ViewModes.cc).
+	This plugin support user settings.
+
+2008-02-11  kitone  <kitone@gna.org>
+
+	* src/SubtitleView.cc:
+	* src/SubtitleView.h:
+	Removes the managing of the view modes (simple, advanced...) and 
+	the columns (show-columns-*) of the code. The columns displayed are 
+	updated simply by listing the configuration.
+	The drag-and-drop of the columns has been disable.
+
+2008-02-11  kitone  <kitone@gna.org>
+
+	* share/menubar.xml:
+	* src/gui/MenuBar.cc:
+	* src/gui/MenuBar.h:
+	Removes the managing of the view modes and columns.
+
+2008-02-11  kitone  <kitone@gna.org>
+
+	* share/glade/dialog-preferences.glade:
+	Small improvements.
+
+2008-02-09  kitone  <kitone@gna.org>
+
+	* src/CommandSystem.cc:
+	Fix #11019 (https://gna.org/bugs/?11019)
+
+2008-02-07  kitone  <kitone@gna.org>
+
+	* src/actions/ChangeFramerate.cc:
+	* src/actions/DocumentManagement.cc:
+	Replace the direct call to DocumentSystem::getAllDocument
+	by SubtitleEditorWindow::get_documents.
+
+2008-02-07  kitone  <kitone@gna.org>
+
+	* src/Document.h:
+	* src/DocumentSystem.h:
+	* src/SubtitleEditorWindow.h:
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	Add function 'get_documents'.
+
+2008-02-07  kitone  <kitone@gna.org>
+
+	* src/gui/Application.cc:
+	* src/gui/Application.h:
+	Delete unsued function.
+
+2008-02-07  kitone  <kitone@gna.org>
+
+	* TODO:
+	Update.
+
+2008-02-06  kitone  <kitone@gna.org>
+
+	* depcomp:
+	* install-sh:
+	* missing:
+	* mkinstalldirs:
+	Remove files from SVN
+
+2008-02-06  kitone  <kitone@gna.org>
+
+	* aclocal.m4:
+	Remove file from SVN
+
+2008-02-06  kitone  <kitone@gna.org>
+
+	* Makefile.in:
+	* config.guess:
+	* config.h.in:
+	* config.sub:
+	* share/Makefile.in:
+	* share/glade/Makefile.in:
+	* share/icons/16x16/Makefile.in:
+	* share/icons/22x22/Makefile.in:
+	* share/icons/24x24/Makefile.in:
+	* share/icons/32x32/Makefile.in:
+	* share/icons/Makefile.in:
+	* share/icons/scalable/Makefile.in:
+	* src/Makefile.in:
+	Remove files from SVN
+
+2008-02-06  kitone  <kitone@gna.org>
+
+	* configure:
+	Remove file in SVN
+
+2008-02-05  kitone  <kitone@gna.org>
+
+	* configure:
+	* configure.in:
+	Switching back to development version.
+
+2008-02-05  kitone  <kitone@gna.org>
+
+	* configure:
+	* configure.in:
+	Preparing 0.20.0 release.
+
+2008-02-05  kitone  <kitone@gna.org>
+
+	* src/actions/About.cc:
+	Fix new website url.
+

@@ -1,0 +1,123 @@
+<ui>
+	<menubar name="menubar">
+
+		<menu action="menu-file">
+			<placeholder name="new-document"/>
+			<menu action="menu-open" name="menu-open">
+				<placeholder name="open-document"/>
+				<placeholder name="open-project"/>
+				<placeholder name="open-translation"/>
+			</menu>
+			<placeholder name="menu-recent-open-document"/>
+			<menu action="menu-save" name="menu-save">
+				<placeholder name="save-document"/>
+				<placeholder name="save-as-document"/>
+				<placeholder name="save-all-documents"/>
+				<placeholder name="save-project"/>
+				<placeholder name="save-translation"/>
+			</menu>
+			<separator/>
+			<!-- placeholder name="properties"/ -->
+			<separator/>
+			<menu action="menu-import" name="menu-import">
+				<placeholder name="placeholder"/>
+			</menu>
+			<menu action="menu-export" name="menu-export">
+				<placeholder name="placeholder"/>
+			</menu>
+			<separator/>
+			<placeholder name="close-document"/>
+			<placeholder name="exit"/>
+		</menu>
+
+		<menu action="menu-edit" name="menu-edit">
+			<placeholder name="command"/>
+			<separator/>
+			<placeholder name="edit-cell"/>
+			<separator/>
+			<!-- placeholder name="cut"/ -->
+			<!-- placeholder name="copy"/-->
+			<!-- placeholder name="paste"/-->
+			<separator/>
+			<placeholder name="insert-subtitle"/>
+			<placeholder name="delete-selected-subtitles"/>
+			<separator/>
+			<placeholder name="split-selected-subtitles"/>
+			<placeholder name="combine-selected-subtitles"/>
+			<placeholder name="duplicate-selected-subtitles"/>
+			<separator/>
+			<placeholder name="text-formatting"/>
+		</menu>
+
+		<menu action="menu-selection" name="menu-selection">
+			<placeholder name="selection"/>
+		</menu>
+
+		<menu action="menu-timings" name="menu-timings">
+			<placeholder name="time-mode-management"/>
+			<separator/>
+			<placeholder name="move-subtitles"/>
+			<!--separator/-->
+			<placeholder name="adjust-time"/>
+			<separator/>
+			<placeholder name="scale-subtitles"/>
+			<placeholder name="change-framerate"/>
+			<separator/>
+			<!-- placeholder name="try-to-extend-to-perfect"/-->
+			<placeholder name="extend-length"/>
+			<!--separator/-->
+			<placeholder name="move-after-preceding-subtitle"/>
+			<separator/>
+			<placeholder name="placeholder"/>
+		</menu>
+
+		<menu action="menu-tools">
+			<placeholder name="find-and-replace"/>
+			<separator/>
+			<placeholder name="checking"/>
+			<separator/>
+			<placeholder name="split-document"/>
+			<placeholder name="join-document"/>
+			<separator/>
+			<placeholder name="style-editor"/>
+			<separator/>
+			<placeholder name="apply-translation"/>
+			<placeholder name="reverse-text-and-translation"/>
+		</menu>
+
+		<menu action="menu-video">
+			<placeholder name="video-player-management"/>
+			<separator/>
+			<placeholder name="placeholder"/>
+		</menu>
+
+		<menu action="menu-waveform">
+			<placeholder name="waveform-management"/>
+		</menu>
+
+		<menu action="menu-keyframes">
+			<placeholder name="placeholder"/>
+			<separator/>
+			<placeholder name="placeholder-2"/>
+		</menu>
+
+		<menu name="menu-view" action="menu-view">
+			<placeholder name="view-manager"/>
+			<separator/>
+			<placeholder name="display-placeholder"/>
+		</menu>
+
+		<menu action="menu-extensions">
+			<placeholder name="placeholder"/>
+		</menu>
+
+		<menu name="menu-options" action="menu-options">
+			<placeholder name="preferences"/>
+			<placeholder name="configure-keyboard-shortcuts"/>
+		</menu>
+
+		<menu action="menu-help">
+			<placeholder name="about"/>
+		</menu>
+	</menubar>
+</ui>

@@ -1,0 +1,595 @@
+2011-06-18  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update before release.
+
+2011-04-10  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with last strings and files.
+
+	* cs.po:
+	Update of Czech translation by Pavel Dvořák.
+
+2011-03-05  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with last strings and files.
+
+2011-01-10  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update with the last string.
+
+2010-12-22  kitone  <kitone@gna.org>
+
+	* pl.po:
+	Update of Polish translation by Franciszek Janowski.
+
+2010-11-10  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* subtitleeditor.pot:
+	Update of Czech translation by Pavel Dvořák.
+
+2010-07-11  kitone  <kitone@gna.org>
+
+	* LINGUAS:
+	* bg.po:
+	Add Bulgarian translation.
+
+	* de.po:
+	* es.po:
+	* ru.po:
+	* tr.po:
+	* zh_CN.po:
+	Update translations.
+
+2010-07-08  kitone  <kitone@gna.org>
+
+	* gl.po:
+	Update of Galician by  marcoslansgarza.
+
+2010-07-03  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update.
+
+2010-05-26  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update.
+
+2010-05-12  kitone  <kitone@gna.org>
+
+	* gl.po:
+	Update of Galician translation by marcoslans.
+
+2010-05-03  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update of Czech translation by Pavel Dvořák.
+
+2010-05-02  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update of Czech translation by Pavel Dvořák.
+
+2010-04-06  kitone  <kitone@gna.org>
+
+	* el.po:
+	* fr.po:
+	* subtitleeditor.pot:
+	Update Greek and French translations.
+
+2010-03-30  kitone  <kitone@gna.org>
+
+	* fr.po:
+	* subtitleeditor.pot:
+	Update French translation.
+
+2010-03-28  kitone  <kitone@gna.org>
+
+	* LINGUAS:
+	* el.po:
+	Add Greek translation by Manolis Stefanis.
+
+2010-02-02  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with the new plugins (typewriter and sortsubtitles).
+
+2010-01-13  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with delete files. (subtitletags)
+
+2009-12-30  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update.
+
+2009-12-08  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new and delete files. (gstplayer & gstreamerplayer)
+
+2009-11-01  kitone  <kitone@gna.org>
+
+	* Makefile.in.in:
+	Update.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with corrected files and types.
+
+2009-08-19  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with renamed files.
+
+2009-08-10  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with new files.
+
+	* LINGUAS:
+	* eo.po:
+	Add Esperanto translation.
+
+2009-07-31  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Fix typo.
+
+2009-07-14  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update with the last change (findandreplace).
+
+2009-06-23  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Update.
+
+2009-06-23  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files.
+
+	* Makefile.in.in:
+	* subtitleeditor.pot:
+	Update.
+
+2009-06-14  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Fix small typo.
+
+2009-06-01  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update.
+
+2009-04-22  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update.
+
+2009-04-10  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update.
+
+2009-04-10  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files.
+
+2008-11-30  kitone  <kitone@gna.org>
+
+	* pl.po:
+	Fix typo. (bug #12658, patch by Fryderyk Dziarmagowski)
+
+2008-11-27  kitone  <kitone@gna.org>
+
+	* pl.po:
+	* zh_CN.po:
+	Update.
+
+2008-11-25  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Update.
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* fr.po:
+	* subtitleeditor.pot:
+	Update translations.
+
+2008-11-24  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update.
+
+2008-11-16  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update.
+
+2008-11-15  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with new files.
+
+	* cs.po:
+	Update by Luboš Staněk.
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Add [type: gettext/ini] before the se-plugin name.
+
+	* subtitleeditor.pot:
+	Update with the last files (include se-plugin.in)
+
+2008-11-13  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new filename. se-plugin.desktop.in to se-plugin.in
+
+2008-11-12  kitone  <kitone@gna.org>
+
+	* LINGUAS:
+	New file.
+
+	* POTFILES.in:
+	Update with desktop.in files.
+
+2008-11-10  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files.
+
+2008-11-03  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Remove RegEx files.
+
+2008-11-02  kitone  <kitone@gna.org>
+
+	* hu.po:
+	* tr.po:
+	* zh_CN.po:
+	Update.
+
+2008-10-13  kitone  <kitone@gna.org>
+
+	* es.po:
+	* pl.po:
+	* zh_CN.po:
+	Update.
+
+2008-10-13  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* fr.po:
+	* subtitleeditor.pot:
+	Update.
+
+2008-10-10  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with last files and messages.
+
+2008-10-06  kitone  <kitone@gna.org>
+
+	* fr.po:
+	* subtitleeditor.pot:
+	Update.
+
+2008-09-25  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files.
+
+2008-09-21  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Update.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* subtitleeditor.pot:
+	Update.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* subtitleeditor.pot:
+	Update and fixes gtk-* strings.
+
+2008-09-20  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with last files and messages.
+	Add [encoding: UTF-8].
+	
+	* subtitleeditor.pot:
+	Update with last files and messages.
+
+2008-09-05  kitone  <kitone@gna.org>
+
+	* zh_CN.po:
+	Update by kaiman.
+
+2008-09-04  kitone  <kitone@gna.org>
+
+	* zh_CN.po:
+	Update by kaiman.
+
+2008-09-03  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* fr.po:
+	* subtitleeditor.pot:
+	* zh_CN.po:
+	Update translations.
+
+2008-09-03  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* subtitleeditor.pot:
+	Update with last files and msg.
+
+2008-08-20  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update by Luboš Staněk.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* README.translators:
+	New file.
+
+2008-08-14  kitone  <kitone@gna.org>
+
+	* en_GB.po:
+	Update.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* cs.po:
+	* fr.po:
+	Update translations.
+
+	* ca.po:
+	* da.po:
+	* de.po:
+	* en_GB.po:
+	* es.po:
+	* gl.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* ru.po:
+	* sr.po:
+	* subtitleeditor.pot:
+	* tr.po:
+	* zh_CN.po:
+	Update.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* fr.po:
+	Update by kitone.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update by Luboš Staněk.
+
+2008-08-13  kitone  <kitone@gna.org>
+
+	* Makefile.in.in:
+	* POTFILES.in:
+	Add intltool. *.desktop file can be translated.
+	Patch by Luboš Staněk.
+
+2008-08-11  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update by Luboš Staněk.
+
+	* ca.po:
+	* da.po:
+	* de.po:
+	* en_GB.po:
+	* es.po:
+	* fr.po:
+	* gl.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* ru.po:
+	* sr.po:
+	* subtitleeditor.pot:
+	* tr.po:
+	* zh_CN.po:
+	Update.
+
+2008-08-06  kitone  <kitone@gna.org>
+
+	* en_GB.po:
+	* gl.po:
+	* sr.po:
+	* tr.po:
+	New files.
+
+	* ca.po:
+	* cs.po:
+	* da.po:
+	* de.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* ru.po:
+	* subtitleeditor.pot:
+	* zh_CN.po:
+	Update.
+
+2008-08-05  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files.
+
+2008-06-17  kitone  <kitone@gna.org>
+
+	* cs.po:
+	Update by petr pisar.
+
+2008-06-12  kitone  <kitone@gna.org>
+
+	* ru.po:
+	Add file.
+
+	* ca.po:
+	* cs.po:
+	* da.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* subtitleeditor.pot:
+	* zh_CN.po:
+	Update.
+
+2008-05-18  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* ca.po:
+	* cs.po:
+	* da.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* subtitleeditor.pot:
+	* zh_CN.po:
+	Update.
+
+2008-05-08  kitone  <kitone@gna.org>
+
+	* da.po:
+	* pt.po:
+	* zh_CN.po:
+	New files.
+
+	* POTFILES.in:
+	* ca.po:
+	* cs.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* subtitleeditor.pot:
+	Update.
+
+2008-04-30  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Add: src/we/WaveformGenerator.h src/we/WaveformGenerator.cc
+
+2008-04-16  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	* ca.po:
+	* cs.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* subtitleeditor.pot:
+	Update.
+
+2008-04-15  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update with new files (video player, waveform editor...).
+
+2008-03-24  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Update.
+
+2008-02-12  kitone  <kitone@gna.org>
+
+	* POTFILES.in:
+	Add: share/glade/dialog-view-manager.glade, src/actions/ViewManager.cc
+
+2008-02-05  kitone  <kitone@gna.org>
+	* POTFILES.in:
+	* ca.po:
+	* cs.po:
+	* es.po:
+	* fr.po:
+	* hu.po:
+	* it.po:
+	* nl.po:
+	* pl.po:
+	* pt_BR.po:
+	* pt_PT.po:
+	* subtitleeditor.pot:
+
+2006-08-14
+	* es.po: spanish translation by Amaya Rodrigo <amaya@debian.org>
+
+2006-02-18 
+	* ca.po : catalan translation by Gil Forcada <gilforcada@guifi.net>
+	* fr.po : french translation by Guillaume de Rugy <guillaume.derugy@free.fr>

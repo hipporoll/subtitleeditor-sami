@@ -1,0 +1,43 @@
+SubtitleEditor stable + 1
+-------------------
+
+	* Fix pattern
+		- Spaces around guillemets replace with ([^\s])([«»])
+
+	* Move WaveformGenerator in plugins/WaveformManagement
+	* Rewrite the FindAndReplace with Glib::Regex (waiting the Glib::MatchInfo API) and fix segault (find; replace all).
+	* check Undo/Redo subtitles selection
+	* Config use set_comment (after set value)
+	* Document use URI (movie, file ...)
+		* Data system (ustring)
+	* Multiple append subtitles
+	* Text
+		* Case
+		* Tag system
+	* Subtitle View
+		* gtk search (num, time, text)
+	* Cut
+	* Copy
+	* Paste
+	* SubtitleEditorProject (selection, position, ...)
+	* SubtitleEditorWindow : send_message, signal ... like ActionSystem for Column View...
+	* Subdownloader plugin
+	* Document Template
+	*	Toolbar plugin (evince style) ?
+	* Special characters input (Lubos email)
+
+SubtitleEditor stable + 2
+-------------------
+
+	* Migrate to GTK+2.12
+		* GtkBuilder
+		* GtkScaleButton
+	* Video Player
+		* Multiple tracks
+		* Dialog video information
+		* Improve
+	* Script (ScriptPlugin)
+		* python
+		* lua
+	* Remove SubtitleTime ? (typedef)
+
