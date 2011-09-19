@@ -8,13 +8,14 @@
 
 ### compile directly on trunk
 
+```
 $ git clone git@github.com:advance38/subtitleeditor-sami.git
 $ cd subtitleeditor-sami/trunk
 $ ./autogen.sh
 $ ./configure
 $ make
 $ sudo make install
-
+```
 
 ### patch against release 0.39
 
@@ -33,13 +34,13 @@ $ sudo make install
 
 ### read
 
-The Sami subtitle format consists of multiple HTML-like tags, e.g. <Sync>, <P>, <Body>.
+The Sami subtitle format consists of multiple HTML-like tags, e.g. ``<Sync>, <P>, <Body>.``
 Upon parsing, we can determine the current states according to the occurrence of predefined tags.
 
 * INIT : the beginning of parsing
-* SYNC_START : if any "<SYNC Start" appears, control flow goes into SYNC_START state, until we meet "<P>" or "<SYNC>".
-* P_OPEN : if any "<P" appears, we go into P_OPEN state, until the P tag closes.
-* P_CLOSE : if the P tag closes with ">", then we go into P_CLOSE state, until the SYNC end delimiter appears.
+* SYNC_START : if any ``"<SYNC Start"`` appears, control flow goes into SYNC_START state, until we meet ``"<P>"`` or ``"<SYNC>"``.
+* P_OPEN : if any ``"<P"`` appears, we go into P_OPEN state, until the P tag closes.
+* P_CLOSE : if the P tag closes with ``">"``, then we go into P_CLOSE state, until the SYNC end delimiter appears.
 * SYNC_END : if SYNC end delimiter appears, sync action finishes, and start parsing again from the INIT state.
 
 ### write
