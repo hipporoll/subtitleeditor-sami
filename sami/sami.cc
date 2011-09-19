@@ -228,9 +228,7 @@ public:
 						inptr += (sizeof(BRTAG) - 1);
 				}
 				else if (strncasecmp (inptr, SYNCTAG, sizeof(SYNCTAG)-1) == 0)
-				{
 					state = SAMI_STATE_SYNC_END;
-				}
 				else
 					*p++ = *inptr++;
 
