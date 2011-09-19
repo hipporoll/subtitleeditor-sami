@@ -1,5 +1,4 @@
 ## A SAMI subtitle plugin for subtitleeditor
-- 
 
 ## Overview
 
@@ -7,42 +6,45 @@
 
 ## Installation
 
-### release 0.38
+### compile directly on trunk
 
-```
-$ wget http://download.gna.org/subtitleeditor/0.38/subtitleeditor-0.38.0.tar.gz
-$ wget https://github.com/advance38/subtitleeditor-sami/blob/master/subtitleeditor-sami-0.38.0.patch
-$ tar xzf subtitleeditor-0.38.0
-$ cd subtitleeditor-0.38.0
-$ patch -p1 < ../subtitleeditor-sami-0.38.0.patch
+$ git clone git@github.com:advance38/subtitleeditor-sami.git
+$ cd subtitleeditor-sami/trunk
+$ ./autogen.sh
 $ ./configure
 $ make
-# make install
-```
+$ sudo make install
 
-### trunk version
+
+### patch against release 0.39
 
 ```
-$ svn checkout http://svn.gna.org/svn/subtitleeditor/trunk subtitleeditor
-$ wget https://github.com/advance38/subtitleeditor-sami/blob/master/subtitleeditor-sami-trunk.patch
-$ cd subtitleeditor
-$ patch -p1 < ../subtitleeditor-sami-trunk.patch
-$ ./autogen.sh
+$ wget http://download.gna.org/subtitleeditor/0.39/subtitleeditor-0.39.0.tar.gz
+$ wget https://github.com/advance38/subtitleeditor-sami/blob/master/subtitleeditor-sami-0.39.0.patch
+$ tar xzf subtitleeditor-0.39.0
+$ cd subtitleeditor-0.39.0
+$ patch -p1 < ../subtitleeditor-sami-0.39.0.patch
+$ ./configure
 $ make
-# make install
+$ sudo make install
 ```
 
 ## Implementation
 
 ### read
 
-```
-```
+The Sami subtitle format consists of multiple HTML-like tags, e.g. <Sync>, <P>, <Body>.
+Upon parsing, we can determine the current states according to the occurrence of predefined tags.
+
+* INIT : the beginning of parsing
+* SYNC_START : if any "<SYNC Start" appears, control flow goes into SYNC_START state, until we meet "<P>" or "<SYNC>".
+* P_OPEN : if any "<P" appears, we go into P_OPEN state, until the P tag closes.
+* P_CLOSE : if the P tag closes with ">", then we go into P_CLOSE state, until the SYNC end delimiter appears.
+* SYNC_END : if SYNC end delimiter appears, sync action finishes, and start parsing again from the INIT state.
 
 ### write
 
-```
-```
+Write action is simpler than read, because the application simply writes subtitle entries from memory to file line by line. Only necessary syntax elements are stored together with subtitle text and sync timing information.
 
 ## Etc
 
