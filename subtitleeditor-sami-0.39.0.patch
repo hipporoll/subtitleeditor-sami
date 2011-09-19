@@ -1,5 +1,17 @@
---- sami.cc.orig	2011-09-19 20:32:46.885311322 +0200
-+++ sami.cc	2011-09-19 21:24:32.248518262 +0200
+diff -Nur subtitleeditor-0.39.0.orig/plugins/subtitleformats/sami/Makefile.am subtitleeditor-0.39.0/plugins/subtitleformats/sami/Makefile.am
+--- subtitleeditor-0.39.0.orig/plugins/subtitleformats/sami/Makefile.am	2011-06-11 09:22:34.000000000 +0200
++++ subtitleeditor-0.39.0/plugins/subtitleformats/sami/Makefile.am	2011-09-19 20:25:21.982076343 +0200
+@@ -7,6 +7,7 @@
+ libsami_la_CXXFLAGS = \
+ 	-I$(top_srcdir) \
+ 	-I$(top_srcdir)/src \
++	-fpermissive \
+ 	$(SUBTITLEEDITOR_CFLAGS)
+ 
+ libsami_la_SOURCES = \
+diff -Nur subtitleeditor-0.39.0.orig/plugins/subtitleformats/sami/sami.cc subtitleeditor-0.39.0/plugins/subtitleformats/sami/sami.cc
+--- subtitleeditor-0.39.0.orig/plugins/subtitleformats/sami/sami.cc	2011-06-18 10:05:15.000000000 +0200
++++ subtitleeditor-0.39.0/plugins/subtitleformats/sami/sami.cc	2011-09-19 21:24:32.248518262 +0200
 @@ -28,6 +28,7 @@
  
  const static int MAXBUF = 1024;
