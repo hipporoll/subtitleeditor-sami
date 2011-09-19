@@ -33,7 +33,7 @@ diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/Makefile.in subtitl
  	subrip \
 diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/Makefile.am subtitleeditor-0.38.0/plugins/subtitleformats/sami/Makefile.am
 --- subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/Makefile.am	1970-01-01 01:00:00.000000000 +0100
-+++ subtitleeditor-0.38.0/plugins/subtitleformats/sami/Makefile.am	2011-06-06 15:51:53.000000000 +0200
++++ subtitleeditor-0.38.0/plugins/subtitleformats/sami/Makefile.am	2011-09-19 21:59:00.000000000 +0200
 @@ -0,0 +1,25 @@
 +pluginlibdir = $(PACKAGE_PLUGIN_LIB_DIR)/subtitleformats
 +plugindescriptiondir = $(PACKAGE_PLUGIN_DESCRIPTION_DIR)/subtitleformats
@@ -63,7 +63,7 @@ diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/Makefile.am su
 diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/sami.cc subtitleeditor-0.38.0/plugins/subtitleformats/sami/sami.cc
 --- subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/sami.cc	1970-01-01 01:00:00.000000000 +0100
 +++ subtitleeditor-0.38.0/plugins/subtitleformats/sami/sami.cc	2011-06-06 19:10:39.000000000 +0200
-@@ -0,0 +1,366 @@
+@@ -0,0 +1,367 @@
 +/*
 + *	subtitleeditor -- a tool to create or edit subtitle
 + *
@@ -94,6 +94,7 @@ diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/sami.cc subtit
 +
 +const static int MAXBUF = 1024;
 +const static char STARTATT[] = "start=";
++const static char SYNCTAG[] = "<Sync";
 +const static char BRTAG[] = "<br>";
 +const static char CRCHAR = '\r';
 +const static char LFCHAR = '\n';
@@ -283,7 +284,7 @@ diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/sami.cc subtit
 +				}
 +				else if (*inptr == CRCHAR)
 +					inptr++;
-+				else if (strncasecmp (inptr, BRTAG, 4) == 0 || *inptr == LFCHAR)
++				else if (strncasecmp (inptr, BRTAG, sizeof(BRTAG)-1) == 0 || *inptr == LFCHAR)
 +				{
 +					*p++ = LFCHAR;
 +					trail_space(inptr);
@@ -292,7 +293,7 @@ diff -Nur subtitleeditor-0.38.0.orig/plugins/subtitleformats/sami/sami.cc subtit
 +					else
 +						inptr += 4;
 +				}
-+				else if (*inptr == '<')
++				else if (strncasecmp (inptr, SYNCTAG, sizeof(SYNCTAG)-1) == 0)
 +					state = SAMI_STATE_SYNC_END;
 +				else
 +					*p++ = *inptr++;
