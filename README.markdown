@@ -6,6 +6,23 @@
 
 ## Installation
 
+
+### preparation
+
+Install development packages to build subtitleeditor.
+
+On Debian/Ubuntu systems:
+
+```
+$ sudo apt-get install libglibmm-2.4-dev libgtkmm-2.4-dev intltool
+```
+
+On Fedora/RedHat systems:
+
+```
+$ sudo yum install glibmm24-devel gtkmm24-devel intltool
+```
+
 ### compile directly on trunk
 
 ```
