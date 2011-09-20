@@ -14,13 +14,14 @@ Install development packages to build subtitleeditor.
 On Debian/Ubuntu systems:
 
 ```
-$ sudo apt-get install libglibmm-2.4-dev libgtkmm-2.4-dev intltool
+$ sudo apt-get install gstreamer0.10-plugins-base intltool libenchant-dev libglibmm-2.4-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libgstreamermm-0.10-dev libgtkmm-2.4-dev libxml++2.6-dev
+
 ```
 
 On Fedora/RedHat systems:
 
 ```
-$ sudo yum install glibmm24-devel gtkmm24-devel intltool
+$ sudo yum install enchant-devel glibmm24-devel gstreamer-devel gstreamer-plugins-base-devel gtkmm24-devel intltool libxml++-devel
 ```
 
 ### compile directly on trunk
